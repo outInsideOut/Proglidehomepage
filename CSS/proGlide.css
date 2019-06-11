@@ -465,7 +465,7 @@ a {
     width: 432px;
   } */
   .colourBarText > p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .colourBarText p {
     padding: 0 1rem;
@@ -473,7 +473,7 @@ a {
 }
 @media only screen and (max-width: 1000px) {
   .textBar2 > p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .section2 {
     height: 86rem;
