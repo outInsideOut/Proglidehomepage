@@ -492,7 +492,7 @@ a {
   /* .customDoorEG {
     width: 432px;
   } */
-  .colourBarText > p {
+  #colourBar > .colourBarText > p {
     font-size: 1.5rem;
   }
   .colourBarText p {
