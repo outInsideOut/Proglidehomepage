@@ -426,6 +426,9 @@ a {
 	right: 100px;
 }
 @media only screen and (max-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
   .textBar2 {
     padding: 0 6rem;
   }
@@ -493,10 +496,6 @@ a {
     }
 }
 @media only screen and (max-width: 800px) {
-
-  html {
-    font-size: 14;
-  }
   .textBar2 {
     padding: 0 3rem;
   }
