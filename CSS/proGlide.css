@@ -280,8 +280,8 @@ a {
   position: absolute;
   left: calc(75vw - 240px);
   top: 5rem;
-  height: 20rem;
-  width: 480px;
+  height: 300px;
+  width: 450px;
   background-color: red;
   border: 2px solid white;
   animation-name: rainbow;
@@ -302,7 +302,7 @@ a {
 
 }
 .customDoorEG > img {
-  height: 20rem;
+  width: 450px;
   position: absolute;
 }
 
@@ -437,6 +437,9 @@ a {
   }
 }
 @media only screen and (max-width: 1100px) {
+  html {
+    font-size: 20px;
+  }
   .topbar > p {
     display: none;
   }
@@ -457,12 +460,10 @@ a {
   .fullNav {
       display: none;
   }
-  .customDoorEG, .customDoorEG > img {
-    height: 18rem;
-  }
-  .customDoorEG {
+
+  /* .customDoorEG {
     width: 432px;
-  }
+  } */
   .colourBarText p {
     padding: 0 1rem;
   }
