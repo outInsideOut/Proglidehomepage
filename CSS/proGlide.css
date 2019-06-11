@@ -372,13 +372,13 @@ a {
 .contactBox > ul > .mailImg {
   height: 50px;
 }
-.contactBox > ul > li > a {
+.contactBox  ul  li  a {
   position: relative;
   top: -15px;
   text-decoration: underline;
 
 }
-.contactBox > ul > li {
+.contactBox  ul  li {
   float: left;
   display: inline-block;
   margin-bottom: 2rem;
@@ -438,12 +438,12 @@ a {
 }
 @media only screen and (max-width: 1100px) {
 
-  .topbar > p {
+  .topbar p {
     display: none;
   }
   /* show menu icon */
 
-  .topbar > img {
+  .topbar .logo {
     left: calc(50vw - 130px);
   }
   .hamburger {
@@ -492,7 +492,7 @@ a {
   /* .customDoorEG {
     width: 432px;
   } */
-  #colourBar > .colourBarText > p {
+  #colourBar .colourBarText  p {
     font-size: 1.5rem;
   }
   .colourBarText p {
