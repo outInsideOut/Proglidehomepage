@@ -1,0 +1,555 @@
+@font-face {
+  font-family: steelfish;
+  src: url(../Assets/steelfish/steelfish.ttf);
+}
+@font-face {
+  font-family: bebasNeue;
+  src: url(../Assets/bebas_neue/BebasNeue-Regular.ttf);
+}
+
+body {
+  font-size: 16px;
+  font-family: bebasNeue;
+  letter-spacing: 0.2rem;
+}
+.section1 {
+  height: 60rem;
+  background-image: url(../Assets/Largeblack3.jpg);
+  background-attachment: fixed;
+}
+
+body, section, nav{
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+.button > a {
+  color: white;
+  font-size: 2rem;
+  background-color: #252769;
+  padding: 5px 15px;
+  border: 2px solid white;
+  transition: 1s all;
+  z-index: 2;
+  position: absolute;
+}
+.button a:hover {
+  color: #252769;
+  background-color: white;
+  border: 2px solid #252769;
+}
+h2, h3 {
+  font-family: steelfish;
+}
+h3 {
+  font-size: 1.7rem;
+  margin: 0.1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.topbar {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7rem;
+}
+.topbar > img {
+  position: relative;
+  height: 5rem;
+  top: 1rem;
+  left: 4rem;
+}
+.topbar > p {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: red;
+}
+.hamburger {
+	/* for small screen menu  */
+	height: 50px;
+	/* no display when large screens */
+	display: none;
+}
+.fullNav {
+  position: relative;
+  top: 7rem;
+  height: 3rem;
+  background-color: #252769;
+  overflow: hidden;
+}
+.fullNav > ul {
+  position: relative;
+  left: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.fullNav > ul >  li {
+  float: left;
+  padding: 1rem;
+  transition: 0.2s all;
+
+}
+.fullNav  li:hover {
+  background-color: black;
+}
+
+.textBar {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 0.1rem solid #252769;
+  border-bottom: 0.1rem solid #252769;
+  overflow: hidden;
+  height: auto;
+
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2.4rem;
+}
+
+.textBar1 {
+  top: 20rem;
+}
+
+.blueBand {
+  background-color: #004f9cff ;
+  color: white;
+  position: absolute;
+
+
+
+  border-top: .8rem solid #252769;
+  border-bottom: .8rem solid #252769;
+}
+#summarySlide {
+  top: 40rem;
+  height: 30rem;
+  font-size: 1.5rem;
+}
+.fadeBox {
+  box-sizing: border-box;
+  text-align:  center;
+  width: 100vw;
+  padding: auto;
+  position: absolute;
+  top: 5rem;
+}
+
+#box2 {
+  display: none;
+}
+#box3 {
+  display: none;
+}
+.line {
+  height: 2.5px;
+  background-color: white;
+
+  position: relative;
+  padding: none;
+  margin: none;
+  margin-bottom: 3px;
+}
+
+.blueBand h2 {
+
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin: 0px;
+  padding: none;
+
+  font-family: steelfish;
+}
+#summarySlide .underline1 {
+  width: 180px;
+  left: calc(50vw - 90px);
+}
+
+#summarySlide .underline2 {
+  height: 2px;
+  width: 150px;
+  left: calc(50vw - 75px);
+}
+
+.fadeBox img {
+  height: 70px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.fadeBox p {
+  margin: 1px;
+
+}
+.paraline1 {
+  width: 500px;
+  left: calc(50vw - 250px);
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.paraline2 {
+  width: 300px;
+  left: calc(50vw - 150px);
+  margin-top: 5px;
+}
+
+.section2 {
+  background-image: url(../Assets/homepage.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 71.5rem;
+  height: 71rem;
+}
+.textBar2 {
+  box-sizing: border-box;
+  padding: 0 8rem;
+  top: 6rem;
+}
+.textBar2 > h2 {
+  font-size: 3rem;
+}
+.textBar2 > p {
+    font-size: 1.5rem;
+}
+
+#colourBar {
+  position: absolute;
+
+  top: 39rem;
+  height: 30rem;
+}
+.colourBarText {
+  width: 50vw;
+  overflow-x: hidden;
+
+  text-align: center;
+  position: relative;
+  top: 2.5rem;
+}
+
+#colourBar h2 {
+  display: inline-block;
+
+}
+#colourBar .underline1 {
+  height: 2px;
+  width: 150px;
+  left: calc(25vw - 75px);
+}
+#colourBar .underline2 {
+  width: 180px;
+  left: calc(25vw - 90px);
+}
+.colourBarText img {
+  position: relative;
+  margin: 1rem 0;
+
+  height: 50px;
+  position: relative;
+  left: -0.2rem;
+}
+#colourBar .paraline1 {
+  width: 40vw;
+  left: 5vw;
+}
+.colourBarText p {
+  box-sizing: border-box;
+  padding: 0 5rem;
+}
+#colourBar .paraline2 {
+  width: 30vw;
+  left: 10vw;
+}
+
+.customDoorEG {
+  position: absolute;
+  left: calc(75vw - 240px);
+  top: 5rem;
+  height: 20rem;
+  width: 480px;
+  background-color: red;
+  border: 2px solid white;
+  animation-name: rainbow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {background-color: red;}
+    12.5% {background-color: orange;}
+    25% {background-color: yellow;}
+    37.5% {background-color: green;}
+    50% {background-color: blue;}
+    62.5% {background-color: indigo;}
+    75% {background-color: violet;}
+    87.5% {background-color: darkgrey;}
+    100% {background-color: red;}
+
+}
+.customDoorEG > img {
+  height: 20rem;
+  position: absolute;
+}
+
+.customDoorEG a {
+  top: calc(50% - 23px);
+  left: calc(50% - 68px);
+}
+
+.section3 {
+  background-image: url(../Assets/Green77slat.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 82rem;
+  height: 30rem;
+}
+.section3 > .textBar {
+  position: relative;
+  top: 10rem;
+
+}
+
+
+.footer {
+  position: relative;
+  border-bottom: none;
+  text-align: center;
+}
+.homepage > .footer {
+  top: 80rem;
+}
+.footer h2 {
+  letter-spacing: 1rem;
+  margin-top: 1rem;
+}
+
+.footer > .underline1 {
+  width: 40rem;
+  max-width: 90vw;
+  position: relative;
+  left: calc(50vw - 20rem);
+}
+.footer > .underline2 {
+  width: 35rem;
+  position: relative;
+  left: calc(50vw - 17.5rem);
+}
+.footer > .underline3 {
+  width: 10rem;
+  position: relative;
+  left: calc(50vw - 5rem);
+}
+.footer > .underline4 {
+  width: 8rem;
+  position: relative;
+  left: calc(50vw - 4rem);
+}
+/*  */
+.contactBox {
+  display: inline-block;
+}
+.contactBox > ul > li > img {
+  height: 40px;
+  padding-left: 20px;
+}
+.contactBox > ul > .mailImg {
+  height: 50px;
+}
+.contactBox > ul > li > a {
+  position: relative;
+  top: -15px;
+  text-decoration: underline;
+
+}
+.contactBox > ul > li {
+  float: left;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.dropNav {
+	/* keeps the side nav for smaller screens in the top left corner */
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* take up whole height of screen */
+	height: 100vh;
+	/* width becomes 100% in script function */
+	width: 0;
+	/* make sure it sits on top of other elements */
+	z-index: 2;
+	background-color: #252769;
+	transition: .5s ease-out all;
+	-webkit-transition: .5s ease-out all;
+	-moz-transition: .5s ease-out all;
+	-ms-transition: .5s ease-out all;
+	overflow-x: hidden;
+	text-align: center;
+}
+.dropNav li {
+	list-style-type: none;
+	padding-top: 3rem;
+}
+.dropNav a {
+	color: white;
+	/* ease-in-out is slower at the start and end of the animation */
+	transition: .3s ease-in-out;
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+		-ms-transition: .3s ease-in-out;
+	font-size: 2rem;
+}
+.dropNav a:hover {
+	color: grey;
+}
+.dropNav #closeBttn {
+	height: 50px;
+  position: absolute;
+	top: 50px;
+	right: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .textBar2 {
+    padding: 0 6rem;
+  }
+  .textBar2 > p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .customDoorEG, .customDoorEG > img {
+    height: 18rem;
+  }
+  .customDoorEG {
+    width: 432px;
+  }
+  .colourBarText p {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .textBar2 > p {
+    font-size: 1.1rem;
+  }
+  .section2 {
+    height: 86rem;
+  }
+  #colourBar {
+    height: 45rem;
+  }
+  .colourBarText {
+    width: 100vw;
+  }
+  #colourBar .underline1 {
+    left: calc(50vw - 75px);
+  }
+  #colourBar .underline2 {
+    left: calc(50vw - 90px);
+  }
+  #colourBar .paraline1 {
+    width: 80vw;
+    left: 10vw;
+  }
+  #colourBar .paraline2 {
+    width: 60vw;
+    left: 20vw;
+  }
+  .customDoorEG {
+    left: calc(50vw - 215px);
+    top: 25rem;
+  }
+  .section3 {
+    top: 97rem;
+  }
+  .homepage > .footer {
+    top: 95rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+    .topbar > p {
+      display: none;
+    }
+    /* show menu icon */
+
+    .topbar > img {
+      left: calc(50vw - 104px);
+    }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 14;
+  }
+  .textBar2 {
+    padding: 0 3rem;
+  }
+  .textBar2 > p {
+    font-size: 1.1rem;
+  }
+
+  .contactBox > ul > li {
+    float: none;
+    display: block;
+    margin-bottom: 0.2rem;
+    transform: translateX(-2.5rem);
+  }
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .topbar {
+    border-bottom: 10px solid #252769;
+  }
+  .fullNav {
+      display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .textBar {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+  .textBar2 > h2 {
+    font-size: 2rem;
+  }
+  .footer > h2 {
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .footer > .underline2{
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+  }
+  .footer > .underline1 {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .textBar2 {
+    top: 3rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .textBar2 {
+    top: 2rem;
+  }
+}
