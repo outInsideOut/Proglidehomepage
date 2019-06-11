@@ -493,8 +493,8 @@ a {
     left: calc(50vw - 215px);
     top: 640px;
   }
-  
-  .colourBarText p {
+
+  .colourBarText > p {
     box-sizing: border-box;
     padding: 0 1rem;
     font-size: 1rem;
