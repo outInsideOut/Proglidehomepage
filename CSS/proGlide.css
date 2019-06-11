@@ -465,7 +465,6 @@ a {
   }
   .section2 {
     height: 2160px;
-
   }
   #colourBar {
     top: 50rem;
@@ -475,6 +474,7 @@ a {
   }
   .colourBarText {
     width: 100vw;
+    font-size: 12px;
   }
   #colourBar .underline1 {
     left: calc(50vw - 75px);
