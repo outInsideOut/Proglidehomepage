@@ -494,8 +494,8 @@ a {
   /* .customDoorEG {
     width: 432px;
   } */
-  #colourBar .colourBarText  p {
-    font-size: 1.5rem;
+  #colourBar .colourBarText p {
+    font-size: 2px;
   }
   .colourBarText p {
     padding: 0 1rem;
