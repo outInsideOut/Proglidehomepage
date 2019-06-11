@@ -493,11 +493,7 @@ a {
     left: calc(50vw - 215px);
     top: 640px;
   }
-  /* .customDoorEG {
-    width: 432px;
-  } */
-
-
+  
   .colourBarText p {
     box-sizing: border-box;
     padding: 0 1rem;
