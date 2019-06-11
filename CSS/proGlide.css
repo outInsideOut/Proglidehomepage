@@ -241,7 +241,7 @@ a {
   position: relative;
   top: 2.5rem;
 
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 #colourBar h2 {
@@ -494,9 +494,7 @@ a {
     left: calc(50vw - 215px);
     top: 640px;
   }
-  .colourBarText {
-    font-size: 1rem;
-  }
+
   .colourBarText > p {
     box-sizing: border-box;
     padding: 0 1rem;
