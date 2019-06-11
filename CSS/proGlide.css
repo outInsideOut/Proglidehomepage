@@ -308,7 +308,7 @@ a {
 
 .customDoorEG a {
   top: calc(50% - 23px);
-  left: calc(50% - 68px);
+  left: calc(50% - 75px);
 }
 
 .section3 {
@@ -437,9 +437,7 @@ a {
   }
 }
 @media only screen and (max-width: 1100px) {
-  html {
-    font-size: 20px;
-  }
+
   .topbar > p {
     display: none;
   }
@@ -460,26 +458,15 @@ a {
   .fullNav {
       display: none;
   }
-
-  /* .customDoorEG {
-    width: 432px;
-  } */
-  .colourBarText > p {
-    font-size: 1.5rem;
-  }
-  .colourBarText p {
-    padding: 0 1rem;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .textBar2 > p {
-    font-size: 1.5rem;
-  }
   .section2 {
-    height: 86rem;
+    height: 108rem;
+
   }
   #colourBar {
-    height: 45rem;
+    top: 50rem;
+  }
+  #colourBar {
+    height: 53rem;
   }
   .colourBarText {
     width: 100vw;
@@ -500,14 +487,30 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 25rem;
+    top: 32rem;
+  }
+  /* .customDoorEG {
+    width: 432px;
+  } */
+  .colourBarText > p {
+    font-size: 1.5rem;
+  }
+  .colourBarText p {
+    padding: 0 1rem;
   }
   .section3 {
-    top: 97rem;
+    top: 116rem;
   }
   .homepage > .footer {
-    top: 95rem;
+    top: 115rem;
   }
+}
+@media only screen and (max-width: 1000px) {
+  .textBar2 > p {
+    font-size: 1.5rem;
+  }
+
+
 }
 @media only screen and (max-width: 900px) {
 
