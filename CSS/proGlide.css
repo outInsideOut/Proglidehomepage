@@ -6,7 +6,9 @@
   font-family: bebasNeue;
   src: url(../Assets/bebas_neue/BebasNeue-Regular.ttf);
 }
-
+html {
+  font-size: 16px;
+}
 body {
   font-size: 16px;
   font-family: bebasNeue;
@@ -491,7 +493,8 @@ a {
     }
 }
 @media only screen and (max-width: 800px) {
-  body {
+
+  html {
     font-size: 14;
   }
   .textBar2 {
@@ -518,6 +521,9 @@ a {
   }
   .fullNav {
       display: none;
+  }
+  #colourBar {
+
   }
 }
 @media only screen and (max-width: 700px) {
