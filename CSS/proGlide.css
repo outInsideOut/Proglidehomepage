@@ -465,6 +465,9 @@ a {
     width: 432px;
   } */
   .colourBarText p {
+    font-size: 12px;
+  }
+  .colourBarText p {
     padding: 0 1rem;
   }
 }
