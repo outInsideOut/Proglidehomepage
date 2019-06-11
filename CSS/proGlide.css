@@ -270,7 +270,9 @@ a {
 .colourBarText p {
   box-sizing: border-box;
   padding: 0 5rem;
+  font-size: 1rem;
 }
+
 #colourBar .paraline2 {
   width: 30vw;
   left: 10vw;
@@ -494,11 +496,12 @@ a {
   /* .customDoorEG {
     width: 432px;
   } */
-  #colourBar .colourBarText p {
-    font-size: 2px;
-  }
+
+
   .colourBarText p {
+    box-sizing: border-box;
     padding: 0 1rem;
+    font-size: 1rem;
   }
   .section3 {
     top: 116rem;
