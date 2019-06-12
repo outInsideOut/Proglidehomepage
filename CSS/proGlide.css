@@ -474,7 +474,8 @@ a {
   }
   .colourBarText {
     width: 100vw;
-    font-size: 6px;
+    height: 342px;
+    font-size: 12px;
   }
   #colourBar .underline1 {
     left: calc(50vw - 75px);
