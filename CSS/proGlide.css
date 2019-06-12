@@ -467,14 +467,14 @@ a {
     height: 2160px;
   }
   #colourBar {
-    top: 50rem;
+    top: 60rem;
   }
   #colourBar {
-    height: 100vh;
+    height: 854px;
   }
   .colourBarText {
     width: 100vw;
-    font-size: 12px;
+    font-size: 1rem;
   }
   #colourBar .underline1 {
     left: calc(50vw - 75px);
@@ -492,7 +492,7 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 50vh;
+    top: 500px;
   }
 
   .colourBarText > p {
