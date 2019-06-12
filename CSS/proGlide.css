@@ -212,7 +212,7 @@ a {
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
-  top: 71.5rem;
+  top: 71.6rem;
   height: 71rem;
 }
 .textBar2 {
@@ -470,7 +470,7 @@ a {
     top: 50rem;
   }
   #colourBar {
-    height: 53rem;
+    height: 100vh;
   }
   .colourBarText {
     width: 100vw;
@@ -492,7 +492,7 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 640px;
+    top: 50vh;
   }
 
   .colourBarText > p {
