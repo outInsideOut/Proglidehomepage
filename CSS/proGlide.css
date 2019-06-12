@@ -18,7 +18,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 71.4rem;
+  height: 71.6rem;
   background-image: url(../Assets/Largeblack3.JPG);
   background-attachment: fixed;
 }
@@ -508,19 +508,19 @@ a {
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .section2 {
-    height:  106.6rem;
+    height:  calc(2000px + 1.6rem);
   }
   #colourBar {
-    top: 60rem;
+    top: 1200px;
   }
   #colourBar {
-    height: 55rem;
+    height: 800px;
   }
   .colourBarText {
     font-size: 12px;
   }
   .customDoorEG {
-    top: 48rem;
+    top: 460px;
   }
   .section3, .homepage > .footer {
     transform: translateY(10rem);
