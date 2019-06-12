@@ -15,7 +15,10 @@ body {
   letter-spacing: 0.2rem;
 }
 .section1 {
-  height: 60rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 71.4rem;
   background-image: url(../Assets/Largeblack3.JPG);
   background-attachment: fixed;
 }
@@ -212,8 +215,8 @@ a {
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
-  top: 71.6rem;
-  height: 71rem;
+  top: 71.4rem;
+  height: 70.6rem;
 }
 .textBar2 {
   box-sizing: border-box;
@@ -319,8 +322,8 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
-  top: 82rem;
+  position: absolute;
+  top: 142rem;
   height: 30rem;
 }
 .section3 > .textBar {
@@ -331,12 +334,12 @@ a {
 
 
 .footer {
-  position: relative;
+  position: absolute;
   border-bottom: none;
   text-align: center;
 }
 .homepage > .footer {
-  top: 80rem;
+  top: 172rem;
 }
 .footer h2 {
   letter-spacing: 1rem;
@@ -461,7 +464,7 @@ a {
       display: none;
   }
   .section2 {
-    height: 2160px;
+    height: 1832px;
   }
 
   .colourBarText {
@@ -495,18 +498,25 @@ a {
     padding: 0 1rem;
   }
   .section3 {
-    top: 116rem;
+    top: 163rem;
   }
   .homepage > .footer {
-    top: 115rem;
+    top: 193rem;
   }
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
+
   #colourBar {
     top: 60rem;
   }
   #colourBar {
     height: 90rem;
+  }
+  .colourBarText {
+    font-size: 12px;
+  }
+  .section3 {
+    top:
   }
 }
 @media only screen and (max-width: 1000px) {
