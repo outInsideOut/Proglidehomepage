@@ -6,20 +6,15 @@
   font-family: bebasNeue;
   src: url(../Assets/bebas_neue/BebasNeue-Regular.ttf);
 }
-html {
-  font-size: 16px;
-}
-body {
 
+body {
+  font-size: 16px;
   font-family: bebasNeue;
   letter-spacing: 0.2rem;
 }
 .section1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 71.6rem;
-  background-image: url(../Assets/Largeblack3.JPG);
+  height: 60rem;
+  background-image: url(../Assets/Largeblack3.jpg);
   background-attachment: fixed;
 }
 
@@ -127,7 +122,7 @@ a {
 }
 
 .blueBand {
-  background-color: #004f9c ;
+  background-color: #004f9cff ;
   color: white;
   position: absolute;
 
@@ -215,8 +210,8 @@ a {
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
-  top: 71.4rem;
-  height: 70.6rem;
+  top: 71.5rem;
+  height: 71rem;
 }
 .textBar2 {
   box-sizing: border-box;
@@ -243,13 +238,11 @@ a {
   text-align: center;
   position: relative;
   top: 2.5rem;
-
-  font-size: 1rem;
 }
 
 #colourBar h2 {
   display: inline-block;
-  font-size: 2rem;
+
 }
 #colourBar .underline1 {
   height: 2px;
@@ -276,7 +269,6 @@ a {
   box-sizing: border-box;
   padding: 0 5rem;
 }
-
 #colourBar .paraline2 {
   width: 30vw;
   left: 10vw;
@@ -286,8 +278,8 @@ a {
   position: absolute;
   left: calc(75vw - 240px);
   top: 5rem;
-  height: 300px;
-  width: 450px;
+  height: 20rem;
+  width: 480px;
   background-color: red;
   border: 2px solid white;
   animation-name: rainbow;
@@ -308,13 +300,13 @@ a {
 
 }
 .customDoorEG > img {
-  width: 450px;
+  height: 20rem;
   position: absolute;
 }
 
 .customDoorEG a {
   top: calc(50% - 23px);
-  left: calc(50% - 75px);
+  left: calc(50% - 68px);
 }
 
 .section3 {
@@ -322,8 +314,8 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  position: absolute;
-  top: 142rem;
+  position: relative;
+  top: 82rem;
   height: 30rem;
 }
 .section3 > .textBar {
@@ -334,12 +326,12 @@ a {
 
 
 .footer {
-  position: absolute;
+  position: relative;
   border-bottom: none;
   text-align: center;
 }
 .homepage > .footer {
-  top: 172rem;
+  top: 80rem;
 }
 .footer h2 {
   letter-spacing: 1rem;
@@ -378,13 +370,13 @@ a {
 .contactBox > ul > .mailImg {
   height: 50px;
 }
-.contactBox  ul  li  a {
+.contactBox > ul > li > a {
   position: relative;
   top: -15px;
   text-decoration: underline;
 
 }
-.contactBox  ul  li {
+.contactBox > ul > li {
   float: left;
   display: inline-block;
   margin-bottom: 2rem;
@@ -432,9 +424,6 @@ a {
 	right: 100px;
 }
 @media only screen and (max-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
   .textBar2 {
     padding: 0 6rem;
   }
@@ -443,33 +432,28 @@ a {
   }
 }
 @media only screen and (max-width: 1100px) {
-  .topbar p {
-    display: none;
+  .customDoorEG, .customDoorEG > img {
+    height: 18rem;
   }
-  /* show menu icon */
-
-  .topbar .logo {
-    left: calc(50vw - 130px);
+  .customDoorEG {
+    width: 432px;
   }
-  .hamburger {
-    display: inline-block;
-    position: absolute;
-    top: 30px;
-    left: 30px;
+  .colourBarText p {
+    padding: 0 1rem;
   }
-  .topbar {
-    border-bottom: 10px solid #252769;
-  }
-  .fullNav {
-      display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .textBar2 > p {
+    font-size: 1.1rem;
   }
   .section2 {
-    height: 91.6rem;
+    height: 86rem;
   }
-
+  #colourBar {
+    height: 45rem;
+  }
   .colourBarText {
     width: 100vw;
-    font-size: 1rem;
   }
   #colourBar .underline1 {
     left: calc(50vw - 75px);
@@ -487,53 +471,29 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 500px;
-  }
-  #colourBar {
-    height: 45rem;
-    top: 45rem;
-  }
-  .colourBarText > p {
-    box-sizing: border-box;
-    padding: 0 1rem;
+    top: 25rem;
   }
   .section3 {
-    top: 163rem;
+    top: 97rem;
   }
   .homepage > .footer {
-    top: 193rem;
+    top: 95rem;
   }
-}
-/* mobile devices with higher pixel density */
-@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
-/* i hope this fackin works */
-  .section2 {
-    height:  calc(2400px + 1.6rem);
-  }
-  #colourBar {
-    top: 1100px;
-  }
-  #colourBar {
-    height: 1200px;
-  }
-  .colourBarText {
-    font-size: 12px;
-  }
-  .customDoorEG {
-    top: 800px;
-  }
-  .section3, .homepage > .footer {
-    transform: translateY(25rem);
-  }
-}
-@media only screen and (max-width: 1000px) {
-
-
 }
 @media only screen and (max-width: 900px) {
+    .topbar > p {
+      display: none;
+    }
+    /* show menu icon */
 
+    .topbar > img {
+      left: calc(50vw - 104px);
+    }
 }
 @media only screen and (max-width: 800px) {
+  body {
+    font-size: 14;
+  }
   .textBar2 {
     padding: 0 3rem;
   }
@@ -547,15 +507,20 @@ a {
     margin-bottom: 0.2rem;
     transform: translateX(-2.5rem);
   }
-
-  #colourBar {
-
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .topbar {
+    border-bottom: 10px solid #252769;
+  }
+  .fullNav {
+      display: none;
   }
 }
 @media only screen and (max-width: 700px) {
-  html {
-    font-size: 20px;
-  }
   .textBar {
     font-size: 2rem;
     padding: 1.5rem;
