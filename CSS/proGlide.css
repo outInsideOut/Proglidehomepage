@@ -511,7 +511,7 @@ a {
     height:  calc(2400px + 1.6rem);
   }
   #colourBar {
-    top: 1200px;
+    top: 1100px;
   }
   #colourBar {
     height: 1200px;
@@ -523,9 +523,8 @@ a {
     top: 800px;
   }
   .section3, .homepage > .footer {
-    transform: translateY(30rem);
+    transform: translateY(25rem);
   }
-
 }
 @media only screen and (max-width: 1000px) {
 
