@@ -440,9 +440,6 @@ a {
   }
 }
 @media only screen and (max-width: 1100px) {
-  html {
-    font-size: 20px;
-  }
   .topbar p {
     display: none;
   }
@@ -466,16 +463,10 @@ a {
   .section2 {
     height: 2160px;
   }
-  #colourBar {
-    top: 60rem;
-  }
-  #colourBar {
-    height: 854px;
-  }
+
   .colourBarText {
     width: 100vw;
-    height: 342px;
-    font-size: 12px;
+    font-size: 1rem;
   }
   #colourBar .underline1 {
     left: calc(50vw - 75px);
@@ -495,7 +486,10 @@ a {
     left: calc(50vw - 215px);
     top: 500px;
   }
-
+  #colourBar {
+    height: 45rem;
+    top: 45rem;
+  }
   .colourBarText > p {
     box-sizing: border-box;
     padding: 0 1rem;
@@ -505,6 +499,14 @@ a {
   }
   .homepage > .footer {
     top: 115rem;
+  }
+}
+@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
+  #colourBar {
+    top: 60rem;
+  }
+  #colourBar {
+    height: 90rem;
   }
 }
 @media only screen and (max-width: 1000px) {
