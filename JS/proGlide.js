@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   console.log("ready");
   //call slideSum() every 3600ms
