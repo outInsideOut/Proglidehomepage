@@ -504,6 +504,7 @@ a {
     top: 193rem;
   }
 }
+/* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
 
   .section2 {
