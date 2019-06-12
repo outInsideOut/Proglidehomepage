@@ -464,7 +464,7 @@ a {
       display: none;
   }
   .section2 {
-    height: 1832px;
+    height: 91.6rem;
   }
 
   .colourBarText {
@@ -506,17 +506,23 @@ a {
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
 
+  .section2 {
+    height:  106.6rem;
+  }
   #colourBar {
     top: 60rem;
   }
   #colourBar {
-    height: 90rem;
+    height: 60rem;
   }
   .colourBarText {
     font-size: 12px;
   }
-  .section3 {
-    top:
+  .customDoorEG {
+    top: 52rem;
+  }
+  .section3, .homepage > .footer {
+    transform: rotateY(15rem);
   }
 }
 @media only screen and (max-width: 1000px) {
