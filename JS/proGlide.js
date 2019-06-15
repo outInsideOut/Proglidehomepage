@@ -20,6 +20,9 @@ $(document).ready(function(){
     $("#shuffleBttn, #fullBttn").css("display", "block");
   });
 
+  setColours();
+
+
 });
 
 var id = 1;
@@ -34,3 +37,26 @@ function slideSum() {
   }
 
 }
+
+function setColours() {
+  console.log("coloursSetting");
+
+// loops through .colourdivs setting bgcolor to id value
+    $(".colourBox .colour").each(function() {
+      var colour = $(this).attr("id");
+      $(this).css("background-color", colour);
+      console.log(colour);
+    });
+}
+
+$(document).ready(function(){
+  $(".colour").click(function(){
+    console.log("click");
+    var colour = $(this).attr("id");
+    console.log(colour);
+    $(".customDoor").css("background-color", colour);
+  })
+});
+function changeColours() {
+
+};
