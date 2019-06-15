@@ -49,14 +49,22 @@ function setColours() {
     });
 }
 
+var prev;
+var colour;
 $(document).ready(function(){
   $(".colour").click(function(){
     console.log("click");
-    var colour = $(this).attr("id");
+    colour = $(this).attr("id");
+
     console.log(colour);
     $(".customDoor").css("background-color", colour);
+    $(this).addClass("selected");
+    $("#" + prev).removeClass("selected");
+    prev = colour;
+
+    var data = $(this).data("colour");
+    console.log(data);
+
+    $(".colourName").empty().text("" + data);
   })
 });
-function changeColours() {
-
-};

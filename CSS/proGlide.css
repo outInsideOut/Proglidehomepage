@@ -337,41 +337,57 @@ a {
 /* COLOURS PAGE */
 /*  */
 /*  */
+.colourPage, .section1 {
+  height: calc(100vh + 15.85rem);
+
+}
 .colourPage  .footer {
   top: 100vh;
 }
 .customiser {
   position: absolute;
+  background-image:  linear-gradient(to bottom right, #e6f3ff, #f2f2f2);
   top: 10rem;
   width: 100vw;
   height: calc(100vh - 10rem);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
   grid-template-rows: 1fr 1fr 1fr;
+
 }
 .customiser .bigBox {
   grid-column: 1 / 5;
   grid-row: 1 / span 3;
 
-  background-color: white;
+
   box-sizing: border-box;
   border-right: 10px solid #252769;
+
+  text-align: center;
 }
 .customiser .customDoor, .customDoor > img {
   position: relative;
-  width:  760px;
+  width:  660px;
+  border-radius: 1rem;
+  border: 2px solid black;
   top: calc(50% - 250px );
-  left: calc(50% - 380px);
+  left: calc(50% - 330px);
 }
 .customiser .customDoor {
+    transition: 0.5s all;
     /* margin-top: 2rem; */
 }
+.colourName {
+  font-size: 2rem;
 
+  position: relative;
+  top: 2rem;
+}
 .customiser .colourBox {
   grid-column: 5 / 6;
   grid-row: 1 / 4;
 
-  background-color: white;
+
 
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
@@ -388,15 +404,51 @@ a {
   width: calc(50% - 1rem);
   height: auto;
   margin: 0.5rem;
-
+  position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
+  transition: 0.5s all;
+
+  box-sizing: border-box;
+
+}
+.colour:hover {
+  cursor: pointer;
+}
+.colour.selected {
+  box-shadow: 0 0 2px 2px #252769;
+  border: 1px solid #252769;
+}
+.colour .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  text-align: center;
+}
+.content p {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1rem;
+
+  top: calc(50% - 1.2rem);
+  color: white;
+  text-shadow: 0 0 8px black;
+
 }
 .colourBox .colour::before {
   content: "";
   display: block;
   padding-top: 100%;
 }
+
+
+/*  */
+/*  */
+/* footer */
 .footer {
   position: absolute;
   border-bottom: none;
@@ -505,6 +557,9 @@ a {
   .textBar2 > p {
     font-size: 1.3rem;
   }
+  .colourName {
+    top: 0;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .topbar p {
@@ -564,6 +619,47 @@ a {
   .section3 {
     top: 163rem;
   }
+
+  .customiser {
+    top: calc(7rem + 10px);
+    height: calc(43rem - 10px);
+
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .customiser .customDoor, .customDoor > img {
+    margin: 0;
+  }
+  .customiser .bigBox {
+    grid-column: 1 / 6;
+    grid-row: 1 / span 2;
+  }
+  .customiser .colourBox {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    display: inline;
+    overflow: auto;
+    white-space: nowrap;
+    border-top: 10px solid #252769;
+    padding-left: 0.5rem;
+  }
+
+  .colourPage  .footer {
+    top: 50rem;
+  }
+  /* .colourBox {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  } */
+  .colourBox .colour {
+    width: 21vw;
+  
+    display: inline-block;
+  }
+  .colourBox .colour::before {
+    content: "";
+    display: block;
+    padding-left: 100%;
+  }
   .homepage > .footer {
     top: 193rem;
   }
@@ -597,6 +693,9 @@ a {
   }
   .section3, .homepage > .footer {
     transform: translateY(25rem);
+  }
+  .colourPage  .footer {
+    top: 100vh;
   }
 }
 @media only screen and (max-width: 1000px) {
