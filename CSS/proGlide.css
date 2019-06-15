@@ -337,7 +337,7 @@ a {
 /* COLOURS PAGE */
 /*  */
 /*  */
-.colourPage, .section1 {
+.colourPage .section1 {
   height: calc(100vh + 15.85rem);
 
 }
@@ -652,7 +652,7 @@ a {
   } */
   .colourBox .colour {
     width: 21vw;
-  
+
     display: inline-block;
   }
   .colourBox .colour::before {
