@@ -608,7 +608,7 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 550px;
+    top: 520px;
   }
   #colourBar {
     height: 45rem;
@@ -713,7 +713,9 @@ a {
 
 }
 @media only screen and (max-width: 900px) {
-
+  .customDoorEG {
+    top: 550px;
+  }
 }
 @media only screen and (max-width: 800px) {
   html {
