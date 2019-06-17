@@ -609,7 +609,6 @@ a {
   .topbar p {
     display: none;
   }
-  /* show menu icon */
 
   .topbar .logo {
     left: calc(50vw - 6.5rem);
@@ -685,6 +684,9 @@ a {
   .homepage > .footer {
     top: 193rem;
   }
+  .colourPage .footer {
+    top: calc(100vh + 7rem + 10px);
+}
 }
 
 @media only screen and (max-width: 1100px) and (orientation: landscape) {
