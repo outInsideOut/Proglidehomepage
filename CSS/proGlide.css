@@ -285,7 +285,7 @@ a {
 .customDoorEG {
   position: absolute;
   left: calc(75vw - 240px);
-  top: 5rem;
+  top: calc(15rem - 150px);
   height: 300px;
   width: 450px;
   background-color: red;
@@ -314,7 +314,7 @@ a {
 
 .customDoorEG a {
   top: calc(50% - 23px);
-  left: calc(50% - 75px);
+  left: calc(50% - 80px);
 }
 
 .section3 {
@@ -559,6 +559,9 @@ a {
   .colourName {
     top: 0;
   }
+  .colourBarText p {
+    padding: 0 2rem;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .topbar p {
@@ -567,7 +570,7 @@ a {
   /* show menu icon */
 
   .topbar .logo {
-    left: calc(50vw - 130px);
+    left: calc(50vw - 6.5rem);
   }
   .hamburger {
     display: inline-block;
@@ -605,7 +608,7 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 215px);
-    top: 500px;
+    top: 550px;
   }
   #colourBar {
     height: 45rem;
@@ -650,7 +653,7 @@ a {
     overflow-y: hidden;
   } */
   .colourBox .colour {
-    width: 21vw;
+    width: 20vw;
 
     display: inline-block;
   }
@@ -668,7 +671,7 @@ a {
 
 /* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
-/* i hope this fackin works */
+
   .textBar2 {
     padding: 0 2rem;
   }
@@ -690,8 +693,16 @@ a {
   .customDoorEG {
     top: 800px;
   }
+  .customiser {
+    grid-template-rows: 1fr 1fr 1.5fr;
+    
+  }
   .section3, .homepage > .footer {
     transform: translateY(25rem);
+  }
+  .customiser .customDoor, .customDoor > img {
+
+    top: ;
   }
   .colourPage  .footer {
     top: 100vh;
@@ -705,11 +716,14 @@ a {
 
 }
 @media only screen and (max-width: 800px) {
+  html {
+    /* font-size: 12px; */
+  }
   .textBar2 {
     padding: 0 3rem;
   }
-  .textBar2 > p {
-    font-size: 1.1rem;
+  .textBar2 > p, .colourBarText {
+    /* font-size: 1.5rem; */
   }
 
   .contactBox > ul > li {
@@ -725,7 +739,7 @@ a {
 }
 @media only screen and (max-width: 700px) {
   html {
-    font-size: 20px;
+
   }
   .textBar {
     font-size: 2rem;
