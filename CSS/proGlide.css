@@ -392,7 +392,7 @@ a {
   font-size: 2rem;
 
   position: relative;
-  top: 2rem;
+  top: 7rem;
 }
 .customiser .colourBox {
   grid-column: 5 / 6;
@@ -580,9 +580,15 @@ a {
     width: 100%;
     left: 0;
   }
+  .customDoor {
+    top: 2rem;
+  }
+  .colourName {
+    top: 2rem;
+  }
 
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (orientation: landscape){
   html {
     font-size: 20px;
   }
@@ -691,12 +697,13 @@ a {
   .colourName {
     top: 5rem;
   }
+
 }
 
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (orientation: landscape){
 
   .customiser .customDoor, .customDoor > img {
     width: 560px;
@@ -710,14 +717,13 @@ a {
   }
 
 }
-@media only screen and (max-width: 1000px) {}
 
 @media only screen and (max-width: 900px) {
   .customDoorEG {
     top: 550px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) and (orientation: landscape) {
   .customiser .customDoor, .customDoor > img {
     width: 460px;
   }
