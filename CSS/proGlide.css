@@ -341,14 +341,14 @@ a {
   height: calc(100vh + 15.85rem);
 }
 .colourPage  .footer {
-  top: 100vh;
+  top: calc(100vh + 10rem) ;
 }
 .customiser {
   position: absolute;
   background-image:  linear-gradient(to bottom right, #e6f3ff, #f2f2f2);
   top: 10rem;
   width: 100vw;
-  height: calc(100vh - 10rem);
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -562,7 +562,6 @@ a {
   .customiser .bigBox {
     grid-column: 1 / 6;
     grid-row: 1 / span 2;
-
   }
   .customiser .colourBox {
     grid-column: 1 / 6;
@@ -575,8 +574,11 @@ a {
   }
   .colourBox .colour {
     width: 20vw;
-
     display: inline-block;
+  }
+  .customiser .customDoor, .customDoor img {
+    width: 100%;
+    left: 0;
   }
 
 }
