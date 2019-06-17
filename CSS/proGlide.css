@@ -367,10 +367,12 @@ a {
 .customDoor {
   position: relative;
   top: calc(50% - 250px );
+  left: calc(50% - 330px);
 }
 .customDoor > img {
   position: relative;
   top: 0;
+  left: 0;
 }
 .customiser .customDoor, .customDoor > img {
 
@@ -378,7 +380,7 @@ a {
   border-radius: 1rem;
   border: 2px solid black;
 
-  left: calc(50% - 330px);
+
 }
 .customiser .customDoor {
     transition: 0.5s all;
@@ -554,6 +556,27 @@ a {
 	top: 50px;
 	right: 100px;
 }
+@media only screen and (orientation: portrait) {
+  .customiser .bigBox {
+    grid-column: 1 / 6;
+    grid-row: 1 / span 2;
+  }
+  .customiser .colourBox {
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    display: inline;
+    overflow: auto;
+    white-space: nowrap;
+    border-top: 10px solid #252769;
+    padding-left: 0.5rem;
+  }
+  .colourBox .colour {
+    width: 20vw;
+
+    display: inline-block;
+  }
+
+}
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 20px;
@@ -632,13 +655,14 @@ a {
 
   .customiser {
     top: calc(7rem + 10px);
-    height: calc(43rem - 10px);
+    height: calc(100vh - 7rem - 10px);
 
     grid-template-rows: 1fr 1fr 1fr;
   }
   .customiser .customDoor, .customDoor > img {
     margin: 0;
   }
+  /*
   .customiser .bigBox {
     grid-column: 1 / 6;
     grid-row: 1 / span 2;
@@ -651,11 +675,8 @@ a {
     white-space: nowrap;
     border-top: 10px solid #252769;
     padding-left: 0.5rem;
-  }
+  } */
 
-  .colourPage  .footer {
-    top: 50rem;
-  }
   /* .colourBox {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -719,10 +740,65 @@ a {
     top: 3rem;
   }
 }
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) and  (orientation:portrait) {
 
 }
+@media only screen and (max-width: 1100px) and (-webkit-mindevice-pixel-ratio: 2) and (orientation:landscape) {
+
+  .customiser .customDoor, .customDoor > img {
+    width: 660px;
+
+  }
+
+}
+/* @media only screen and (max-width: 1000px)  and (orientation:landscape) {
+  .customiser .customDoor, .customDoor > img {
+    width: 460px;
+  }
+  .customDoor {
+      left: calc(50% - 230px);
+      top: calc(50% - 200px);
+  }
+  .colourName {
+    top: 3rem;
+  }
+} */
+@media only screen and (max-width: 1000px) {
+  .customiser .customDoor, .customDoor > img {
+    width: 460px;
+  }
+  .customDoor {
+      left: calc(50% - 230px);
+      top: calc(50% - 200px);
+  }
+  .colourName {
+    top: 3rem;
+  }
+
+}
+@media only screen and (max-width: 1000px) and (-webkit-mindevice-pixel-ratio: 2) and (orientation:landscape) {
+  .customDoor {
+      left: calc(50% - 180px);
+  }
+  .customiser .customDoor, .customDoor > img {
+    width: 360px;
+  }
+  .customiser {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .customiser .bigBox {
+    grid-column: 1 / 5;
+    grid-row: 1 / span 3;
+  }
+  .customiser .colourBox {
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: flex;
+  }
 @media only screen and (max-width: 900px) {
   .customDoorEG {
     top: 550px;
