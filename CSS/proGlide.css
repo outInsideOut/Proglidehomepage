@@ -702,7 +702,7 @@ a {
   }
   .customiser .customDoor, .customDoor > img {
 
-    top: ;
+    top: 5rem;
   }
   .colourPage  .footer {
     top: 100vh;
