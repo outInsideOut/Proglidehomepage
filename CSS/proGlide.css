@@ -834,9 +834,9 @@ a {
   .section3, .homepage > .footer {
     transform: translateY(28.7rem);
   }
-  .customiser .customDoor{
 
-    left: calc(50% - 45rem);
+  .customiser .customDoor, .customDoor > img {
+
   }
 
 }
@@ -844,9 +844,16 @@ a {
   .customiser {
     height: 80vh;
   }
+  .customiser .customDoor{
+    width: 100vw;
+    left: 0;
+  }
 
-  .customiser .customDoor {
-    left: 5vw;
+  .colour {
+    width: 30vw;
+  }
+  .colour p {
+    font-size: 4rem;
   }
   .customiser .customDoor, .customDoor > img {
     width: 90vw;
