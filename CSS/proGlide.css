@@ -772,9 +772,7 @@ a {
   .customDoor {
       left: 0;
   }
-  .customiser .customDoor, .customDoor > img {
-    width: 100%;
-  }
+
   .customiser {
     grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -790,6 +788,11 @@ a {
     -webkit-flex-wrap: wrap;
     display: flex;
     flex-wrap: flex;
+  }
+}
+@media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait) {
+  .customDoor, .customDoor > img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 900px) {
