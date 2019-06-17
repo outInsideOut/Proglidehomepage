@@ -363,6 +363,8 @@ a {
   border-right: 10px solid #252769;
 
   text-align: center;
+
+    position: relative;
 }
 .customDoor {
   position: relative;
@@ -560,6 +562,7 @@ a {
   .customiser .bigBox {
     grid-column: 1 / 6;
     grid-row: 1 / span 2;
+
   }
   .customiser .colourBox {
     grid-column: 1 / 6;
@@ -662,25 +665,7 @@ a {
   .customiser .customDoor, .customDoor > img {
     margin: 0;
   }
-  /*
-  .customiser .bigBox {
-    grid-column: 1 / 6;
-    grid-row: 1 / span 2;
-  }
-  .customiser .colourBox {
-    grid-column: 1 / 6;
-    grid-row: 3 / 4;
-    display: inline;
-    overflow: auto;
-    white-space: nowrap;
-    border-top: 10px solid #252769;
-    padding-left: 0.5rem;
-  } */
 
-  /* .colourBox {
-    overflow-x: scroll;
-    overflow-y: hidden;
-  } */
   .colourBox .colour {
     width: 20vw;
 
@@ -696,7 +681,17 @@ a {
   }
 }
 
-
+@media only screen and (max-width: 1100px) and (orientation: landscape) {
+  .customiser {
+    height: 100vh;
+  }
+  .colourPage .footer {
+    top: calc(100vh + 7rem + 10px);
+  }
+  .colourName {
+    top: 5rem;
+  }
+}
 
 /* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -751,31 +746,22 @@ a {
   }
 
 }
-/* @media only screen and (max-width: 1000px)  and (orientation:landscape) {
-  .customiser .customDoor, .customDoor > img {
-    width: 460px;
-  }
-  .customDoor {
-      left: calc(50% - 230px);
-      top: calc(50% - 200px);
-  }
-  .colourName {
-    top: 3rem;
-  }
-} */
+
 @media only screen and (max-width: 1000px) {
+
   .customiser .customDoor, .customDoor > img {
-    width: 460px;
+    width: 560px;
   }
   .customDoor {
-      left: calc(50% - 230px);
+      left: calc(50% - 280px);
       top: calc(50% - 200px);
   }
   .colourName {
-    top: 3rem;
+    top: 7rem;
   }
 
 }
+@media only screen and (max-width: 1000px)
 @media only screen and (max-width: 1000px) and (-webkit-mindevice-pixel-ratio: 2) and (orientation:landscape) {
   .customDoor {
       left: calc(50% - 180px);
@@ -799,9 +785,22 @@ a {
     display: flex;
     flex-wrap: flex;
   }
+}
 @media only screen and (max-width: 900px) {
   .customDoorEG {
     top: 550px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .customiser .customDoor, .customDoor > img {
+    width: 460px;
+  }
+  .customDoor {
+      left: calc(50% - 230px);
+      top: calc(50% - 200px);
+  }
+  .colourName {
+    top: 3rem;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -825,6 +824,7 @@ a {
   #colourBar {
 
   }
+
 }
 @media only screen and (max-width: 700px) {
   html {
