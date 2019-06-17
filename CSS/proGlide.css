@@ -309,6 +309,7 @@ a {
 }
 .customDoorEG > img {
   width: 450px;
+  max-width: 90vw;
   position: absolute;
 }
 
@@ -865,7 +866,7 @@ a {
   }
 
 }
-@media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
+/* @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
   .section3, .homepage > .footer {
     transform: translateY(5rem);
   }
@@ -895,4 +896,4 @@ a {
   .customDoor, .customDoor > img {
     width: 100%;
   }
-}
+} */
