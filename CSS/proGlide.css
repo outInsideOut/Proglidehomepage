@@ -576,9 +576,12 @@ a {
     width: 20vw;
     display: inline-block;
   }
+  .customiser .customDoor {
+    left: 5vw;
+  }
   .customiser .customDoor, .customDoor img {
-    width: 100%;
-    left: 0;
+    width: 90vw;
+
   }
   .customDoor {
     top: 2rem;
@@ -806,10 +809,10 @@ a {
     font-size: 1.5rem;
   }
   .section2 {
-    height:  calc(2400px + 1.6rem);
+    height:  calc(1900px + 1.6rem);
   }
   #colourBar {
-    top: 1100px;
+    top: 700px;
   }
   #colourBar {
     height: 1200px;
@@ -825,7 +828,7 @@ a {
 
   }
   .section3, .homepage > .footer {
-    transform: translateY(25rem);
+    transform: translateY(28.7rem);
   }
   .customiser .customDoor{
     top: 5rem;
