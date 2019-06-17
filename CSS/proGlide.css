@@ -721,7 +721,7 @@ a {
   }
   .customiser {
     grid-template-rows: 1fr 1fr 1.5fr;
-    height: calc(100vh - 7rem - 10px);
+    
   }
   .section3, .homepage > .footer {
     transform: translateY(25rem);
