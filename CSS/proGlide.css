@@ -763,13 +763,13 @@ a {
   }
 
 }
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px) {}
 @media only screen and (max-width: 1000px) and (-webkit-mindevice-pixel-ratio: 2) and (orientation:landscape) {
   .customDoor {
-      left: calc(50% - 180px);
+      left: 0;
   }
   .customiser .customDoor, .customDoor > img {
-    width: 360px;
+    width: 100%;
   }
   .customiser {
     grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
@@ -802,7 +802,7 @@ a {
       top: calc(50% - 200px);
   }
   .colourName {
-    top: 3rem;
+    top: 8rem;
   }
 }
 @media only screen and (max-width: 800px) {
