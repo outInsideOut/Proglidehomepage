@@ -660,8 +660,6 @@ a {
 
   .customiser {
     top: calc(7rem + 10px);
-    height: calc(100vh - 7rem - 10px);
-
     grid-template-rows: 1fr 1fr 1fr;
   }
   .customiser .customDoor, .customDoor > img {
