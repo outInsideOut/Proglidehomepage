@@ -721,7 +721,7 @@ a {
   }
   .customiser {
     grid-template-rows: 1fr 1fr 1.5fr;
-    
+
   }
   .section3, .homepage > .footer {
     transform: translateY(25rem);
@@ -730,15 +730,17 @@ a {
     top: 5rem;
   }
 
-  .colourPage  .footer {
-    top: 100vh;
-  }
+
+
   .colourName {
     top: 3rem;
   }
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) and  (orientation:portrait) {
-
+  .customiser .customDoor, .customDoor > img {
+    width: 100vw;
+    left: 0;
+  }
 }
 @media only screen and (max-width: 1100px) and (-webkit-mindevice-pixel-ratio: 2) and (orientation:landscape) {
 
