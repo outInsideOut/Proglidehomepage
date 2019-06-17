@@ -844,10 +844,7 @@ a {
   .customiser {
     height: 80vh;
   }
-  .customiser .customDoor{
-    width: 100vw;
-    left: 0;
-  }
+
 
   .colour {
     width: 30vw;
@@ -856,7 +853,7 @@ a {
     font-size: 4rem;
   }
   .customiser .customDoor, .customDoor > img {
-    width: 90vw;
+    width: 100vw;
     left: 0;
   }
   .colourPage .footer {
