@@ -364,12 +364,20 @@ a {
 
   text-align: center;
 }
-.customiser .customDoor, .customDoor > img {
+.customDoor {
   position: relative;
+  top: calc(50% - 250px );
+}
+.customDoor > img {
+  position: relative;
+  top: 0;
+}
+.customiser .customDoor, .customDoor > img {
+
   width:  660px;
   border-radius: 1rem;
   border: 2px solid black;
-  top: calc(50% - 250px );
+
   left: calc(50% - 330px);
 }
 .customiser .customDoor {
@@ -607,7 +615,7 @@ a {
     left: 20vw;
   }
   .customDoorEG {
-    left: calc(50vw - 215px);
+    left: calc(50vw - 225px);
     top: 520px;
   }
   #colourBar {
@@ -700,12 +708,15 @@ a {
   .section3, .homepage > .footer {
     transform: translateY(25rem);
   }
-  .customiser .customDoor, .customDoor > img {
-
+  .customiser .customDoor{
     top: 5rem;
   }
+
   .colourPage  .footer {
     top: 100vh;
+  }
+  .colourName {
+    top: 3rem;
   }
 }
 @media only screen and (max-width: 1000px) {
