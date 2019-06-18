@@ -346,7 +346,7 @@ a {
 }
 .customiser {
   position: absolute;
-  background-image:  linear-gradient(to bottom right, #e6f3ff, #f2f2f2);
+  background-image:  linear-gradient(to bottom right, #f2f2f2, #b3b3b3);
   top: 10rem;
   width: 100vw;
   height: 100vh;
@@ -415,7 +415,7 @@ a {
 
   width: calc(50% - 1rem);
   height: auto;
-  margin: 0.5rem;
+  margin: auto 0.5rem;
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
@@ -833,9 +833,6 @@ a {
   .customDoorEG {
     top: 800px;
   }
-
-
-
   .section3, .homepage > .footer {
     transform: translateY(28.7rem);
   }
@@ -853,7 +850,6 @@ a {
     width: 30vw;
   }
   .colour p {
-    top: 1rem;
     font-size: 3rem;
   }
   .customiser .customDoor, .customDoor > img {
