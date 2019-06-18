@@ -457,6 +457,43 @@ a {
   padding-top: 100%;
 }
 
+/*  */
+/*  */
+/* gallery pg */
+.galleryBox {
+  border: none;
+  position: relative;
+  height: calc(100vh - 10rem);
+  top: 7rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+.galleryBox h2 {
+  padding: 2rem ;
+}
+.gridWrap {
+  box-sizing: border-box;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-gap: 2rem;
+  height: calc(100% - 5rem);
+
+}
+.gridWrap div {
+  grid-column: span 1;
+  overflow:hidden;
+  border: 5px solid #252769;
+}
+.gridWrap div:hover {
+  cursor: pointer;
+}
+.gridWrap div > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 /*  */
 /*  */
@@ -468,6 +505,14 @@ a {
 }
 .homepage > .footer {
   top: 172rem;
+}
+.gallery .footer {
+
+  top: 110vh;
+}
+.gallery > .section1 {
+  height: calc(100vh + 16rem);
+  overflow-y: hidden;
 }
 .footer h2 {
   letter-spacing: 1rem;
@@ -559,6 +604,8 @@ a {
 	top: 50px;
 	right: 100px;
 }
+
+
 @media only screen and (orientation: portrait) {
   .customiser {
     /* 6 * 3 */
@@ -596,7 +643,10 @@ a {
   .colourName {
     top: 5rem;
   }
-
+  .gridWrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+  }
 }
 @media only screen and (orientation: landscape) {
   .colourName {
