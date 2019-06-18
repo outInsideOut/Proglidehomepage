@@ -954,6 +954,9 @@ a {
     top: calc(50% - 15rem);
     font-size: 4rem;
   }
+  .galleryBox {
+    height: calc(200vh + 12rem);
+  }
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
   .customiser {
