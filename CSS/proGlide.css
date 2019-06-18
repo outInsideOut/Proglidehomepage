@@ -567,6 +567,7 @@ a {
   .customiser .bigBox {
     grid-column: 1 / 6;
     grid-row: 1 / span 3;
+    border-right: none;
   }
   .customiser .colourBox {
     grid-column: 1 / 6;
@@ -586,7 +587,6 @@ a {
   }
   .customiser .customDoor, .customDoor img {
     width: 90vw;
-    max-width: 550px;
   }
   .customDoor {
     top: 6rem;
@@ -598,7 +598,7 @@ a {
 }
 @media only screen and (orientation: landscape) {
   .colourName {
-    top: calc(50% - 10rem);
+    top: calc(50% - 13rem);
   }
 }
 @media only screen and (max-width: 1200px) and (orientation: landscape){
@@ -709,9 +709,9 @@ a {
   .colourPage .footer {
     top: calc(100vh + 7rem + 10px);
   }
-  /* .colourName {
-    top: 5rem;
-  } */
+  .colourName {
+    top: calc(50% - 11rem);
+  }
 
 }
 
@@ -853,8 +853,8 @@ a {
     width: 30vw;
   }
   .colour p {
-    top: 0.5rem;
-    font-size: 4rem;
+    top: 1rem;
+    font-size: 3rem;
   }
   .customiser .customDoor, .customDoor > img {
     width: 90vw;

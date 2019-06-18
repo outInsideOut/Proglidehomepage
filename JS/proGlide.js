@@ -43,7 +43,7 @@ function setColours() {
 
 // loops through .colourdivs setting bgcolor to id value
     $(".colourBox .colour").each(function() {
-      var colour = $(this).attr("id");
+      var colour = $(this).data("colour");
       $(this).css("background-color", colour);
       console.log(colour);
     });
@@ -54,15 +54,15 @@ var colour;
 $(document).ready(function(){
   $(".colour").click(function(){
     console.log("click");
-    colour = $(this).attr("id");
+    colour = $(this).data("colour");
 
     console.log(colour);
     $(".customDoor").css("background-color", colour);
     $(this).addClass("selected");
     $("#" + prev).removeClass("selected");
-    prev = colour;
+    prev = $(this).attr("id");
 
-    var data = $(this).data("colour");
+    var data = $(this).data("name");
     console.log(data);
 
     $(".colourName").empty().text("" + data);
