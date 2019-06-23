@@ -368,7 +368,7 @@ a {
     position: relative;
 }
 .customDoor {
-  position: relative;
+  position: absolute;
   top: calc(50% - 250px );
   left: calc(50% - 330px);
 }
@@ -392,7 +392,9 @@ a {
 .colourName {
   font-size: 2rem;
 
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 7rem;
 }
 .customiser .colourBox {
@@ -411,6 +413,9 @@ a {
 
   overflow-y: scroll;
 }
+.colourTitle {
+  display: block;
+}
 .colourBox .colour {
 
   width: calc(50% - 1rem);
@@ -428,8 +433,8 @@ a {
   cursor: pointer;
 }
 .colour.selected {
-  box-shadow: 0 0 2px 2px #252769;
-  border: 1px solid #252769;
+  box-shadow: 1px 1px 4px 8px darkgrey;
+  border: 1px solid darkgrey;
 }
 .colour .content {
   position: absolute;
@@ -439,11 +444,14 @@ a {
   left: 0;
 
   text-align: center;
+  display: flex;
+}
+.content span {
+  margin:auto;
 }
 .content p {
   position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
+
   font-size: 1rem;
 
   top: calc(50% - 1.2rem);
@@ -456,6 +464,7 @@ a {
   display: block;
   padding-top: 100%;
 }
+
 
 /*  */
 /*  */
@@ -500,6 +509,28 @@ a {
   width: 100%;
 }
 
+/* fullscreen */
+.FullScreenGallery, #fullImg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.FullScreenGallery {
+  background-color: black;
+  display: none;
+}
+#fullImg {
+
+}
+#gallcloseBttn {
+  position: absolute;
+  right: 30px;
+}
+#fullImg > img {
+  position: absolute;
+}
 /*  */
 /*  */
 /* footer */
@@ -663,7 +694,7 @@ a {
 }
 @media only screen and (orientation: landscape) {
   .colourName {
-    top: calc(50% - 13rem);
+    top: calc(50% + 12rem);
   }
 
 }
@@ -784,9 +815,7 @@ a {
   .colourPage .footer {
     top: calc(100vh + 7rem + 10px);
   }
-  .colourName {
-    top: calc(50% - 11rem);
-  }
+
 
 }
 

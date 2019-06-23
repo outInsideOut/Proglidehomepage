@@ -49,9 +49,48 @@ function setColours() {
     });
 }
 
+function positionImg() {
+  console.log("positioning");
+  var img = "#fullImg > img"
+  var height = $(img).height();
+  console.log(height);
+  var width = $(img).width();
+  console.log(width);
+
+  if (height < width) {
+    console.log("landscape");
+    $(img).css("width", "100vw");
+
+    height = $(img).height();
+    var top = "calc(50vh - "+parseInt(height/2)+"px)";
+    $(img).css("top", top );
+  };
+
+};
+
 var prev;
 var colour;
 $(document).ready(function(){
+
+  //if image is clicked
+  $(".img").click(function() {
+    console.log("click");
+    //take source data from element
+    var src = $(this).data("source");
+    //add image to html
+    $("#fullImg").html("<img src='" + src + "'>");
+    //fade in gallery
+
+    $(".FullScreenGallery").fadeIn(500);
+    $("#fullImg > img").ready(positionImg());
+  });
+
+
+
+  $("#gallcloseBttn").click( function() {
+    $(".FullScreenGallery").fadeOut(500);
+  });
+
   $(".colour").click(function(){
     console.log("click");
     colour = $(this).data("colour");
