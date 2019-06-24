@@ -26,6 +26,11 @@ $(document).ready(function(){
   windowWidth =  $(window).width();
   windowHeight = $(window).height();
   console.log("width: " + windowWidth + "     height: " + windowHeight )
+
+  //
+  //
+  //
+  // window resize
   window.addEventListener("resize", function() {
     windowWidth =  $(window).width();
     windowHeight = $(window).height();
@@ -37,6 +42,12 @@ $(document).ready(function(){
       $(".colour").css("width", colourHeight);
     }
     if (windowWidth > windowHeight) {
+      if (windowWidth < 1100) {
+        $(".colour").css("width", "20vw")
+      }
+      else {
+        $(".colour").css("width", "calc(50% - 1rem)")
+      }
       colHeight = $(".colour").width();
       $(".colour").css("height", colHeight);
     }
@@ -49,8 +60,16 @@ $(document).ready(function(){
     $(".colour").css("width", colourHeight);
   }
   if (windowWidth > windowHeight) {
-    colHeight = $(".colour").width();
-    $(".colour").css("height", colHeight);
+    if (windowWidth > windowHeight) {
+      if (windowWidth < 1100) {
+        $(".colour").css("width", "20vw")
+      }
+      else {
+        $(".colour").css("width", "calc(50% - 1rem)")
+      }
+      colHeight = $(".colour").width();
+      $(".colour").css("height", colHeight);
+    }
   }
 
 });
