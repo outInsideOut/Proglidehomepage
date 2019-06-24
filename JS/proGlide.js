@@ -35,7 +35,7 @@ $(document).ready(function(){
     //store window width and height
     windowWidth =  $(window).width();
     windowHeight = $(window).height();
-
+    $(".colour").css("transition", "0s all");
     //if portrait
     if (windowWidth < windowHeight) {
       //height of colourBox
@@ -57,12 +57,10 @@ $(document).ready(function(){
         $(".colour").css("width", "calc(50% - 1rem)")
       }
       //set height==width
-
+      var colHeight = $(".colour").delay(500).width();
+      $(".colour").delay(500).css("height", colHeight);
     }
-    if (windowWidth > windowHeight) {
-      var colHeight = $(".colour").width();
-      $(".colour").css("height", colHeight);
-    }
+    $(".colour").css("transition", "0.5s all");
   });
 
   if (windowWidth < windowHeight) {
@@ -79,7 +77,7 @@ $(document).ready(function(){
       else {
         $(".colour").css("width", "calc(50% - 1rem)")
       }
-      colHeight = $(".colour").width();
+      colHeight = $(".colour").delay(500).width();
       $(".colour").css("height", colHeight);
     }
   }

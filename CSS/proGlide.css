@@ -642,7 +642,7 @@ a {
 @media only screen and (orientation: portrait) {
   .customiser {
     /* 6 * 3 */
-    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .customiser .bigBox {
     grid-column: 1 / 6;
@@ -911,7 +911,7 @@ a {
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .customiser {
-    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-auto-rows: 1fr 1fr 1fr 2fr;
   }
   .customdoor {
     top: 4rem;
