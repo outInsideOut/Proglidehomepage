@@ -32,22 +32,31 @@ $(document).ready(function(){
   //
   // window resize
   window.addEventListener("resize", function() {
+    //store window width and height
     windowWidth =  $(window).width();
     windowHeight = $(window).height();
 
+    //if portrait
     if (windowWidth < windowHeight) {
+      //height of colourBox
       colBoxHght = $(".colourBox").height();
+      //set height of colour box to 90% of colBoxHgt
       $(".colour").css("height", colBoxHght * 0.9);
+      //get colour height
       var colourHeight = $(".colour").height();
+      //make width == height
       $(".colour").css("width", colourHeight);
     }
+    //if landscape
     if (windowWidth > windowHeight) {
+      //if less than 1100px wide
       if (windowWidth < 1100) {
         $(".colour").css("width", "20vw")
       }
       else {
         $(".colour").css("width", "calc(50% - 1rem)")
       }
+      //set height==width
       colHeight = $(".colour").width();
       $(".colour").css("height", colHeight);
     }

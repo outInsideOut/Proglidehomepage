@@ -922,6 +922,9 @@ a {
   .textBar2 {
     top: 2rem;
   }
+  .colourName {
+    top: calc(50% + 7rem);
+  }
 }
 /* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
