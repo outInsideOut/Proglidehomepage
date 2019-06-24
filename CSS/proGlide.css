@@ -951,7 +951,7 @@ a {
   }
   .customDoor {
       left: calc(50% - 150px);
-      top: calc(50% - 150px);
+      top: calc(50% - 120px);
   }
   .colourName {
       top: calc(50% + 3rem);
@@ -967,8 +967,14 @@ a {
 }
 /* iphone 5 portrait */
 @media only screen and (max-width: 400px) and (orientation: portrait) {
+  .customiser .customDoor {
+    top: 2rem;
+  }
   .colourName {
     top: calc(50% + 3rem);
+  }
+  .content p {
+    font-size: 0.7rem;
   }
 
 }
