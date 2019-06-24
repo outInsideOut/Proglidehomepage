@@ -1,3 +1,4 @@
+var windowWidth, windowHeight;
 
 $(document).ready(function(){
   console.log("ready");
@@ -22,6 +23,35 @@ $(document).ready(function(){
 
   setColours();
 
+  windowWidth =  $(window).width();
+  windowHeight = $(window).height();
+  console.log("width: " + windowWidth + "     height: " + windowHeight )
+  window.addEventListener("resize", function() {
+    windowWidth =  $(window).width();
+    windowHeight = $(window).height();
+
+    if (windowWidth < windowHeight) {
+      colBoxHght = $(".colourBox").height();
+      $(".colour").css("height", colBoxHght * 0.9);
+      var colourHeight = $(".colour").height();
+      $(".colour").css("width", colourHeight);
+    }
+    if (windowWidth > windowHeight) {
+      colHeight = $(".colour").width();
+      $(".colour").css("height", colHeight);
+    }
+  });
+
+  if (windowWidth < windowHeight) {
+    colBoxHght = $(".colourBox").height();
+    $(".colour").css("height", colBoxHght * 0.9);
+    var colourHeight = $(".colour").height();
+    $(".colour").css("width", colourHeight);
+  }
+  if (windowWidth > windowHeight) {
+    colHeight = $(".colour").width();
+    $(".colour").css("height", colHeight);
+  }
 
 });
 
@@ -52,16 +82,16 @@ function setColours() {
 function positionImg() {
   console.log("positioning");
   var img = "#fullImg > img"
-  var height = $(img).height();
-  console.log(height);
-  var width = $(img).width();
-  console.log(width);
+  var imgHeight = $(img).height();
+  console.log(imgHeight);
+  var imgWidth = $(img).width();
+  console.log(imgWidth);
 
-  if (height < width) {
+  if (imgHeight < imgWidth) {
     console.log("landscape");
     $(img).css("width", "100vw");
 
-    height = $(img).height();
+    var height = $(img).height();
     var top = "calc(50vh - "+parseInt(height/2)+"px)";
     $(img).css("top", top );
   };

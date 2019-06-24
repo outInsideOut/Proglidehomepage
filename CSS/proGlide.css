@@ -410,7 +410,7 @@ a {
 
   box-sizing: border-box;
   padding: 1rem;
-
+  position: relative;
   overflow-y: scroll;
 }
 .colourTitle {
@@ -459,7 +459,7 @@ a {
   text-shadow: 0 0 8px black;
 
 }
-.colourBox .colour::before {
+/* .colourBox .colour::before { */
   content: "";
   display: block;
   padding-top: 100%;
@@ -666,15 +666,13 @@ a {
   }
   .customiser .customDoor {
     left: 5vw;
+    top: 2rem;
   }
   .customiser .customDoor, .customDoor img {
     width: 90vw;
   }
-  .customDoor {
-    top: 6rem;
-  }
   .colourName {
-    top: 5rem;
+    top: calc(50% + 10rem);
   }
   .gridWrap {
     grid-template-columns: 1fr 1fr;
@@ -786,7 +784,7 @@ a {
 
     display: inline-block;
   }
-  .colourBox .colour::before {
+  /* .colourBox .colour::before { */
     content: "";
     display: block;
     padding-left: 100%;
@@ -850,6 +848,9 @@ a {
       left: calc(50% - 230px);
       top: calc(50% - 200px);
   }
+  .colourName {
+      top: calc(50% + 5rem);
+  }
   /* .colourName {
     top: 2rem;
   } */
@@ -907,6 +908,15 @@ a {
   .textBar2 {
     top: 3rem;
   }
+}
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .customiser {
+    grid-template-rows: 1fr 1fr 1.5fr;
+  }
+  .customdoor {
+    top: 4rem;
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .textBar2 {
