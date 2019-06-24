@@ -25,8 +25,7 @@ $(document).ready(function(){
 
   windowWidth =  $(window).width();
   windowHeight = $(window).height();
-  console.log("width: " + windowWidth + "     height: " + windowHeight )
-
+  console.log("width: " + windowWidth + "     height: " + windowHeight );
   //
   //
   //
@@ -57,8 +56,8 @@ $(document).ready(function(){
         $(".colour").css("width", "calc(50% - 1rem)")
       }
       //set height==width
-      var colHeight = $(".colour").delay(500).width();
-      $(".colour").delay(500).css("height", colHeight);
+      var colHeight = $(".colour").width();
+      $(".colour").css("height", colHeight);
     }
     $(".colour").css("transition", "0.5s all");
   });
