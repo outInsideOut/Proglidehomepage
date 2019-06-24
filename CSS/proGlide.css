@@ -911,7 +911,7 @@ a {
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .customiser {
-    grid-auto-rows: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1.7fr;
   }
   .customdoor {
     top: 4rem;
