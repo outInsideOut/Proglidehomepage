@@ -57,7 +57,10 @@ $(document).ready(function(){
         $(".colour").css("width", "calc(50% - 1rem)")
       }
       //set height==width
-      colHeight = $(".colour").width();
+
+    }
+    if (windowWidth > windowHeight) {
+      var colHeight = $(".colour").width();
       $(".colour").css("height", colHeight);
     }
   });
