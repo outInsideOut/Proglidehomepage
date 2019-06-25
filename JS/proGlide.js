@@ -60,6 +60,8 @@ $(document).ready(function(){
       $(".colour").css("height", colHeight);
     }
     $(".colour").css("transition", "0.5s all");
+
+    positionImg();
   });
 
   if (windowWidth < windowHeight) {
@@ -106,28 +108,58 @@ function setColours() {
       console.log(colour);
     });
 }
-
+//img gallery positionImg
 function positionImg() {
   console.log("positioning");
-  var img = "#fullImg > img"
+  var img = "#fullImg > img";
   var imgHeight = $(img).height();
   console.log(imgHeight);
   var imgWidth = $(img).width();
   console.log(imgWidth);
 
-  if (imgHeight < imgWidth) {
-    console.log("landscape");
-    $(img).css("width", "100vw");
-
+  //if window is landscape
+  if (windowWidth > windowHeight) {
+    //portrait img
+    if (imgHeight < imgWidth) {
+      console.log("landscapeimg");
+      $(img).css("width", "80vw");
+    }
+    else {
+      console.log("portraitimg");
+      $(img).css("height", "100vh");
+    }
     var height = $(img).height();
+    var width = $(img).width();
+
     var top = "calc(50vh - "+parseInt(height/2)+"px)";
+    var left = "calc(50vw - "+parseInt(width/2)+"px)";
     $(img).css("top", top );
+    $(img).css("left", left);
+  };
+  //landscape window
+  if (windowHeight > windowWidth) {
+    //portrait img
+    if (imgHeight > imgWidth) {
+      console.log("porteimg");
+      $(img).css("height", "80vh");
+    }
+    else {
+      console.log("landimg");
+      $(img).css("width", "100vw");
+    }
+    var height = $(img).height();
+    var width = $(img).width();
+    var top = "calc(50vh - "+parseInt(height/2)+"px)";
+    var left = "calc(50vw - "+parseInt(width/2)+"px)";
+    $(img).css("top", top );
+    $(img).css("left", left);
   };
 
 };
 
 var prev;
 var colour;
+var currentImg
 $(document).ready(function(){
 
   //if image is clicked
@@ -135,6 +167,7 @@ $(document).ready(function(){
     console.log("click");
     //take source data from element
     var src = $(this).data("source");
+    currentImg = $(this).data("order");
     //add image to html
     $("#fullImg").html("<img src='" + src + "'>");
     //fade in gallery
@@ -143,6 +176,62 @@ $(document).ready(function(){
     $("#fullImg > img").ready(positionImg());
   });
 
+var imgChanged = true
+  $("#gallNext img").click(function() {
+
+
+    if(imgChanged == true) {
+      imgChanged = false;
+      setTimeout( function() {
+        imgChanged = true
+      }, 1000)
+      if (currentImg < 8) {
+        currentImg++;
+      }
+      else {
+        currentImg = 1;
+      };
+      var nextImg = "#img" + parseInt(currentImg);
+      src = $(nextImg).data("source");
+      $("#fullImg").fadeOut(300);
+
+      setTimeout( function() {
+        $("#fullImg").empty();
+        $("#fullImg").html("<img src='" + src + "'>");
+        $("#fullImg").fadeIn(300);
+        $("#fullImg > img").ready(positionImg());
+
+      }, 301);
+    }
+
+
+  });
+  $("#gallPrev img").click(function() {
+
+    if(imgChanged == true) {
+      imgChanged = false;
+      setTimeout( function() {
+        imgChanged = true
+      }, 1000)
+      if (currentImg > 1) {
+        currentImg--;
+      }
+      else {
+        currentImg = 8;
+      };
+      var nextImg = "#img" + parseInt(currentImg);
+      src = $(nextImg).data("source");
+      $("#fullImg").fadeOut(300);
+
+      setTimeout( function() {
+        $("#fullImg").html("<img src='" + src + "'>");
+        $("#fullImg").fadeIn(300);
+        positionImg();
+
+      }, 301);
+    }
+
+  });
 
 
   $("#gallcloseBttn").click( function() {
