@@ -987,7 +987,43 @@ a {
     top: calc(50% + 7rem);
   }
 }
-/* iphone 5 portrait */
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+  .section1 {
+    height: 76.6rem;
+  }
+
+  #summarySlide {
+    /* +5rem */
+    height: 35rem;
+  }
+  .fadeBox p {
+    margin: 2rem;
+  }
+  .section2 {
+    top: 76.6rem;
+    height: 116.6rem;
+  }
+  #colourBar {
+    height: 45rem;
+    top: 55rem;
+  }
+  .customDoorEG {
+    left: calc(50vw - 157.5px);
+    top: 450px;
+  }
+  .customDoorEG, .customDoorEG img {
+    height: 210px;
+    width: 315px;
+  }
+
+  .section3 {
+    top: 178rem;
+  }
+  .homepage > .footer {
+    top: 208rem;
+  }
+}
+/*@ iphone 5 portrait */
 @media only screen and (max-width: 400px) and (orientation: portrait) {
   .customiser .customDoor {
     top: 2rem;
@@ -998,7 +1034,14 @@ a {
   .content p {
     font-size: 0.7rem;
   }
-
+  .textBar2 p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 300px) and (orientation: portrait) {
+  #summarySlide {
+    font-size: 1rem;
+  }
 }
 /* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
