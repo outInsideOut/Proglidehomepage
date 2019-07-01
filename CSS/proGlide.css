@@ -956,6 +956,9 @@ a {
   .colourName {
     top: calc(50% + 12rem);
   }
+  .dropNav #closeBttn {
+    right: 25px;
+  }
 }
 @media only screen and (max-width: 700px) {
   html {
@@ -1086,10 +1089,10 @@ a {
     font-size: 1.5rem;
   }
   .customiser .customDoor {
-    top: 2rem;
+    top: 4rem;
   }
   .colourName {
-    top: calc(50% + 3rem);
+    top: calc(50% + 5rem);
   }
   .content p {
     font-size: 0.7rem;
