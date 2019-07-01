@@ -511,6 +511,21 @@ a {
   width: 100%;
 }
 
+
+/*  */
+/*  */
+/* contact */
+/*  */
+#map {
+  height: 200px;
+  width: 100vw;
+  position: absolute;
+  top: 50vh;
+}
+
+
+
+
 /* fullscreen */
 .FullScreenGallery, #fullImg {
   position: fixed;
@@ -718,6 +733,15 @@ a {
   }
 
 }
+@media only screen and (max-height: 1500px) and (orientation: portrait) {
+  .customiser .customDoor {
+    left: 5vw;
+  }
+  .colourName {
+    top: calc(50% + 18rem);
+  }
+
+}
 @media only screen and (max-width: 1200px) and (orientation: landscape){
   html {
     font-size: 20px;
@@ -827,6 +851,11 @@ a {
     top: calc(7rem + 10px);
   }
 }
+@media only screen and (max-height: 602px) and (orientation: landscape) {
+  .colourName {
+    top: calc(50% + 9rem);
+  }
+}
 @media only screen and (max-width: 1100px) and (orientation: portrait) {
 
 }
@@ -838,7 +867,9 @@ a {
     top: calc(100vh + 7rem + 10px);
   }
 
-
+  .colourName {
+    top: calc(50%  + 9rem);
+  }
 }
 
 
@@ -853,9 +884,7 @@ a {
       left: calc(50% - 280px);
       top: calc(50% - 200px);
   }
-  /* .colourName {
-    top: 7rem;
-  } */
+
 
 }
 
@@ -968,7 +997,7 @@ a {
   .customiser {
     grid-template-rows: 1fr 1fr 1fr 1.7fr;
   }
-  .customdoor {
+  .customiser .customdoor {
     top: 4rem;
   }
 
@@ -1028,6 +1057,9 @@ a {
   }
   .homepage > .footer {
     top: 208rem;
+  }
+  .customiser .customDoor {
+    top: 4rem;
   }
 }
 /*@ iphone 5 portrait */

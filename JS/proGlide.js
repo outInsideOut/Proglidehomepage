@@ -63,7 +63,6 @@ $(document).ready(function(){
 
     positionImg();
   });
-
   if (windowWidth < windowHeight) {
     colBoxHght = $(".colourBox").height();
     $(".colour").css("height", colBoxHght * 0.9);
@@ -83,7 +82,21 @@ $(document).ready(function(){
     }
   }
 
+  initMap();
+
 });
+
+function initMap() {
+  // The location of proGlide
+  var proGlide = {lat: 53.220474, lng: -0.461603};
+  // location of LINCOLN
+  var lincs = {lat: 53.2304, lng: -0.5407}
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 11, center: lincs});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: proGlide, map: map});
+}
 
 var id = 1;
 function slideSum() {
