@@ -1152,11 +1152,6 @@ a {
   }
   .colour p {
     font-size: 3rem;
-    position: relative;
-    top: 3rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
   .customiser .customDoor, .customDoor > img {
     width: 90vw;
@@ -1165,7 +1160,7 @@ a {
   }
   .customiser .customDoor {
     left: 5vw;
-    top: 20rem;
+    top: 4rem;
   }
   .colourPage .footer {
     top: calc(80vh + 7rem + 10px);
@@ -1174,7 +1169,7 @@ a {
     height: calc(80vh + 7rem + 326px)
   }
   .colourName {
-    top: calc(50% - 15rem);
+    top: calc(50% - 1rem);
     font-size: 4rem;
   }
   .galleryBox {
