@@ -122,9 +122,6 @@ a {
   padding: 2.4rem;
 }
 
-.textBar1 {
-  top: 20rem;
-}
 
 .blueBand {
   background-color: #004f9c ;
@@ -136,6 +133,47 @@ a {
   border-top: .8rem solid #252769;
   border-bottom: .8rem solid #252769;
 }
+
+#entry {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.homepage {}
+#entry #door {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+#entry .wrapper {
+  position: absolute;
+
+}
+#entry .logoBox {
+  position: absolute;
+  top: calc(50vh - 6rem);
+  left: calc(50vw - 11rem);
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-radius: 5px;
+  border: .2rem solid #252769;
+  text-align: center;
+}
+#entry .logoBox:hover {
+  cursor: pointer;
+}
+#entry .entryLogo {
+  margin: 1rem;
+  width: 19.5rem;
+}
+.textBar1 {
+  top: 20rem;
+}
+
 #summarySlide {
   top: 40rem;
   height: 30rem;
@@ -511,21 +549,6 @@ a {
   width: 100%;
 }
 
-
-/*  */
-/*  */
-/* contact */
-/*  */
-#map {
-  height: 200px;
-  width: 100vw;
-  position: absolute;
-  top: 50vh;
-}
-
-
-
-
 /* fullscreen */
 .FullScreenGallery, #fullImg {
   position: fixed;
@@ -568,6 +591,34 @@ a {
 
   transform: rotate(180deg);
 }
+
+/*  */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/* contact */
+/*  */
+#map {
+  height: 200px;
+  width: 100vw;
+  position: absolute;
+  top: 50vh;
+}
+.contact {
+  height: calc(100vh + 17.115rem);
+}
+.contact .section1 {
+  height: calc(100vh + 17.115rem);
+}
+
+
+
+
+
+
+
 /*  */
 /*  */
 /* footer */
@@ -583,7 +634,9 @@ a {
 
   top: calc(100vh + 22rem);
 }
-
+.contact .footer {
+  top: 100vh;
+}
 .footer h2 {
   letter-spacing: 1rem;
   margin-top: 1rem;
@@ -1217,3 +1270,10 @@ a {
     width: 100%;
   }
 } */
+
+
+.entryLock {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}

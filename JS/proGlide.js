@@ -1,9 +1,19 @@
 var windowWidth, windowHeight;
 
 $(document).ready(function(){
+  windowWidth =  $(window).width();
+  windowHeight = $(window).height();
+  console.log("width: " + windowWidth + "     height: " + windowHeight );
   console.log("ready");
-  //call slideSum() every 3600ms
 
+
+  //slide up entryLogo
+  $(".logoBox").click(function() {
+    $("#entry").slideUp(4000);
+    $(".homepage").removeClass("entryLock");
+  });
+
+  //call slideSum() every 5600ms
   setInterval(slideSum, 5800);
 
   //to open side menu when hamburder icon is clicked on smaller screens
@@ -23,9 +33,8 @@ $(document).ready(function(){
 
   setColours();
 
-  windowWidth =  $(window).width();
-  windowHeight = $(window).height();
-  console.log("width: " + windowWidth + "     height: " + windowHeight );
+
+
   //
   //
   //
@@ -34,6 +43,8 @@ $(document).ready(function(){
     //store window width and height
     windowWidth =  $(window).width();
     windowHeight = $(window).height();
+
+    console.log("width: " + windowWidth + "     height: " + windowHeight );
     $(".colour").css("transition", "0s all");
     //if portrait
     if (windowWidth < windowHeight) {
@@ -82,9 +93,21 @@ $(document).ready(function(){
     }
   }
 
-  initMap();
+  positionLogoBox();
 
+  initMap();
 });
+
+function positionLogoBox() {
+  console.log("running")
+  //position entrylogo box
+  // var logoWidth = $("#logoBox").width();
+  // var logoHeight = $("#logoBox").height();
+  // var top = "calc(100vh - "+logoHeight/2+")"
+  // console.log("calc(100vh - "+parseInt(logoHeight/2)+")" );
+  // var left = "calc(100vw - "+parseInt(logoWidth/2+")"
+  // $("#logoBox").css("top", top)
+}
 
 function initMap() {
   // The location of proGlide
