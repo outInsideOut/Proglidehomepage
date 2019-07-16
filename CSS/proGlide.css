@@ -1126,6 +1126,33 @@ a {
   .section2 {
     height: calc(118.75rem + 3.2rem);
   }
+  .textBar2 {
+    padding: 0 2rem;
+  }
+  .textBar2 > p {
+    font-size: 1.8rem;
+  }
+  #colourBar {
+    height: 75rem;
+  }
+  .colourBarText {
+    font-size: 12px;
+  }
+  .customDoorEG, .customDoorEG img {
+    height: 27rem;
+    width: 41rem;
+  }
+  .customDoorEG {
+    top: 700px;
+    left: calc(50vw - 20.5rem);
+  }
+  .customDoorEG a {
+
+    left: calc(50% - 81.5px);
+  }
+  .button > a {
+    font-size: 2.5rem;
+  }
   .section3, .homepage > .footer {
     transform: translateY(30.0rem);
   }
@@ -1155,29 +1182,15 @@ a {
 }
 @media only screen and (max-device-width: 400px) and (orientation: portrait) {
 
-  .customDoorEG, .customDoorEG img {
-    height: 147px;
-    width: 220px;
-  }
-  .customDoorEG {
-    left: calc(50vw - 110px);
-    top: 500px;
-  }
-  .customDoorEG a {
 
-    left: calc(50% - 57px);
-  }
-  .button > a {
-    font-size: 1.5rem;
-  }
+
+
   .customiser .customDoor {
     top: calc(30vh - 350px);
 
   }
 
-  .textBar2 p {
-    font-size: 1rem;
-  }
+
 
 }
 
@@ -1189,23 +1202,11 @@ a {
 /* mobile devices with higher pixel density */
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 3) {
 
-  .textBar2 {
-    padding: 0 2rem;
-  }
-  .textBar2 > p {
-    font-size: 1.5rem;
-  }
 
 
-  #colourBar {
-    height: 75rem;
-  }
-  .colourBarText {
-    font-size: 12px;
-  }
-  .customDoorEG {
-    top: 800px;
-  }
+
+
+
 
 
 
