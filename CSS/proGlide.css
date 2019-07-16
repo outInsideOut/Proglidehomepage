@@ -754,15 +754,22 @@ a {
     display: inline-block;
     margin: auto 0.5rem;
   }
+
+
   .customiser .customDoor {
     left: 5vw;
-    top: 2rem;
+    top: calc(35vh - 350px);
   }
+  .colourName {
+    top: 55vh;
+    font-size: 4rem;
+  }
+
   .customiser .customDoor, .customDoor img {
     width: 90vw;
   }
-  .colourName {
-    top: calc(50% + 10rem);
+  .content p {
+    font-size: 1.8rem;
   }
   .gridWrap {
     grid-template-columns: 1fr 1fr;
@@ -994,6 +1001,25 @@ a {
     right: 5px;
   }
 }
+/* ipad portrait */
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+  .content p {
+    font-size: 2.5rem;
+  }
+  .customiser .customDoor {
+    top: calc(35vh - 350px);
+  }
+  .colourName {
+    top: 55vh;
+    font-size: 4rem;
+  }
+}
+/* ipad landscape */
+@media only screen and (max-device-width: 1100px) and (orientation: landscape) {
+  .content p {
+    font-size: 1.8rem;
+  }
+}
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   .customDoorEG {
     top: 512px;
@@ -1147,7 +1173,6 @@ a {
     left: calc(50vw - 20.5rem);
   }
   .customDoorEG a {
-
     left: calc(50% - 81.5px);
   }
   .button > a {
