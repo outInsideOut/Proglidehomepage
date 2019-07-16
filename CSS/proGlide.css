@@ -1146,7 +1146,7 @@ a {
     height: calc(100vh);
   }
   .colour p {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
   .colourpage .footer {
     height: calc(20vh - 7.8rem);
@@ -1174,9 +1174,7 @@ a {
     top: calc(30vh - 350px);
 
   }
-  .content p {
-    font-size: 0.7rem;
-  }
+
   .textBar2 p {
     font-size: 1rem;
   }
