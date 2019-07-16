@@ -827,7 +827,7 @@ a {
     left: 30px;
   }
   .topbar {
-    border-bottom: 10px solid #252769;
+    border-bottom: 0.8rem solid #252769;
   }
   .fullNav {
       display: none;
@@ -871,7 +871,7 @@ a {
   }
 
   .customiser {
-    top: calc(7rem + 10px);
+    top: 7.8rem;
 
   }
   .customiser .customDoor, .customDoor > img {
@@ -1119,12 +1119,41 @@ a {
   }
 }
 /*@ iphone 5 portrait */
-@media only screen and (max-width: 450px) and (orientation: portrait) {
+@media only screen and (max-device-width: 450px) and (orientation: portrait) {
   .textBar2 p {
     font-size: 1.3rem;
   }
+  .section2 {
+    height: calc(118.75rem + 3.2rem);
+  }
+  .section3, .homepage > .footer {
+    transform: translateY(30.0rem);
+  }
+  .customiser {
+    height: 80vh;
+  }
+  .customiser .customDoor {
+    top: calc(30vh - 350px);
+  }
+  .customiser .customDoor, .customDoor > img {
+    width: 90vw;
+  }
+  .colourName {
+    top: 50vh;
+    font-size: 4rem;
+  }
+  .colourPage .section1 {
+    height: calc(100vh);
+  }
+  .colour p {
+    font-size: 3rem;
+  }
+  .colourpage .footer {
+    height: calc(20vh - 7.8rem);
+    top: calc(80vh + 7.8rem)
+  }
 }
-@media only screen and (max-width: 400px) and (orientation: portrait) {
+@media only screen and (max-device-width: 400px) and (orientation: portrait) {
 
   .customDoorEG, .customDoorEG img {
     height: 147px;
@@ -1142,10 +1171,8 @@ a {
     font-size: 1.5rem;
   }
   .customiser .customDoor {
-    top: 4rem;
-  }
-  .colourName {
-    top: calc(50% + 5rem);
+    top: calc(30vh - 350px);
+
   }
   .content p {
     font-size: 0.7rem;
@@ -1153,6 +1180,7 @@ a {
   .textBar2 p {
     font-size: 1rem;
   }
+
 }
 
 @media only screen and (max-width: 300px) and (orientation: portrait) {
@@ -1169,14 +1197,10 @@ a {
   .textBar2 > p {
     font-size: 1.5rem;
   }
-  .section2 {
-    height:  calc(1900px + 1.6rem);
-  }
+
+
   #colourBar {
-    top: 700px;
-  }
-  #colourBar {
-    height: 1200px;
+    height: 75rem;
   }
   .colourBarText {
     font-size: 12px;
@@ -1184,58 +1208,25 @@ a {
   .customDoorEG {
     top: 800px;
   }
-  .section3, .homepage > .footer {
-    transform: translateY(28.7rem);
-  }
 
-  .customiser .customDoor, .customDoor > img {
 
-  }
+
 
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 3) and  (orientation:portrait) {
   .dropNav {
     font-size: 4rem;
   }
-  .customiser {
-    height: 80vh;
-  }
-  .colourBox .colour {
-    width: 30vw;
-  }
-  .colour p {
-    font-size: 3rem;
-  }
-  .customiser .customDoor, .customDoor > img {
-    width: 90vw;
-    max-width: 90vw;
-    left: 0;
-  }
-  .customiser .customDoor {
-    left: 5vw;
-    top: 4rem;
-  }
-  .colourPage .footer {
-    top: calc(80vh + 7rem + 10px);
-  }
-  .colourPage .section1 {
-    height: calc(80vh + 7rem + 326px)
-  }
-  .colourName {
-    top: calc(50% - 1rem);
-    font-size: 4rem;
-  }
+
+
+
   .galleryBox {
     height: calc(200vh + 12rem);
   }
 }
 @media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 3) and (orientation:landscape) {
-  .customiser {
-    height: 100vh;
-  }
-  .colourPage .footer {
-    top: calc(100vh + 7rem + 10px);
-  }
+
+
 
 }
 /*
