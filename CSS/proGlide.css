@@ -1146,31 +1146,38 @@ a {
   }
 }
 /*@ iphone 5 portrait */
-@media only screen and (max-device-width: 450px) and (orientation: portrait) {
+@media only screen and (max-device-width: 450px)  {
+  #summarySlide {
+    font-size: 2rem;
+  }
   .textBar2 p {
     font-size: 1.3rem;
   }
   .section2 {
-    height: calc(118.75rem + 3.2rem);
+    height: calc(153.75rem + 3.2rem);
   }
   .textBar2 {
     padding: 0 2rem;
   }
   .textBar2 > p {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   #colourBar {
-    height: 75rem;
+    top: 70rem;
+    height: 85rem;
   }
-  .colourBarText {
-    font-size: 14px;
+  #colourBar h2 {
+    font-size: 3rem;
+  }
+  .colourBarText > p{
+    font-size: 1.5rem;
   }
   .customDoorEG, .customDoorEG img {
     height: 27rem;
     width: 41rem;
   }
   .customDoorEG {
-    top: 710px;
+    top: 56rem;
     left: calc(50vw - 20.5rem);
   }
   .customDoorEG a {
@@ -1180,7 +1187,7 @@ a {
     font-size: 2.5rem;
   }
   .section3, .homepage > .footer {
-    transform: translateY(30.0rem);
+    transform: translateY(65rem);
   }
   .customiser {
     height: 80vh;
