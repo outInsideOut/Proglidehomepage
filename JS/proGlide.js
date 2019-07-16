@@ -1,16 +1,32 @@
 var windowWidth, windowHeight;
 
+// function noRepeat() {
+//   console.log("hidden")
+//   if (sessionStorage.entry) {
+//     $("#entry").css("display", "hidden");
+//   }
+// }
+//
+// noRepeat();
+
 $(document).ready(function(){
+  if (sessionStorage.entry) {
+    $("#entry").css("display", "none");
+    $(".homepage").removeClass("entryLock");
+  }
   windowWidth =  $(window).width();
   windowHeight = $(window).height();
   console.log("width: " + windowWidth + "     height: " + windowHeight );
   console.log("ready");
+
+  console.log("hidden")
 
 
   //slide up entryLogo
   $(".logoBox").click(function() {
     $("#entry").slideUp(4000);
     $(".homepage").removeClass("entryLock");
+    sessionStorage.setItem("entry", "true");
   });
 
   //call slideSum() every 5600ms
