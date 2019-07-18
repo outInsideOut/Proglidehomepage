@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   console.log("hidden")
 
-  $(window).on("orientationChange", function() {
+  window.addEventListener("orientationchange", function() {
     location.reload();
   });
   //slide up entryLogo
