@@ -21,7 +21,9 @@ $(document).ready(function(){
 
   console.log("hidden")
 
-
+  $(window).on("orientationChange", function() {
+    location.reload();
+  });
   //slide up entryLogo
   $(".logoBox").click(function() {
     $("#entry").slideUp(4000);
