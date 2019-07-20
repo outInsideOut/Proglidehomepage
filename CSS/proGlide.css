@@ -1282,6 +1282,16 @@ a {
   .FAQs p {
     font-size: small;
   }
+  .faqPage .footer {
+    top: 196rem;
+  }
+
+  .dropNav a {
+    font-size: 4rem;
+  }
+  .dropNav li {
+    margin-top: 3rem;
+  }
 }
 @media only screen and (max-device-width: 400px) and (orientation: portrait) {
   .customiser .customDoor {
