@@ -676,7 +676,7 @@ a {
   top: calc(100vh + 22rem);
 }
 .faqPage .footer {
-  top: 300vh;
+  top: 114rem;
 }
 .contact .footer {
   top: 100vh;
@@ -868,6 +868,9 @@ a {
   .FAQs img {
     width: 30rem;
   }
+  .faqPage .footer {
+    top: 103rem;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .topbar p {
@@ -968,6 +971,9 @@ a {
   .FAQs {
     top: 31.8rem;
   }
+  .faqPage .footer {
+    top: 100rem;
+  }
 }
 @media only screen and (max-height: 602px) and (orientation: landscape) {
   .colourName {
@@ -1058,6 +1064,8 @@ a {
     top: 5px;
     right: 5px;
   }
+
+
 }
 /* ipad portrait */
 @media only screen and (max-device-width: 800px) and (orientation: portrait) {
@@ -1071,6 +1079,25 @@ a {
     top: 55vh;
     font-size: 4rem;
   }
+
+  .faqTitle {
+    padding: 0 1rem 0 1rem;
+    height: 40rem;
+  }
+  .FAQs {
+    top: 51.8rem;
+  }
+  .FAQs h2 {
+    font-size: 3.5rem;
+  }
+  .FAQs p {
+    font-size: 3rem;
+  }
+  .faqPage .footer {
+    top: 125rem;
+  }
+
+
 }
 /* ipad landscape */
 @media only screen and (max-device-width: 1100px) and (orientation: landscape) {
@@ -1202,7 +1229,7 @@ a {
     top: 4rem;
   }
 }
-/*@ iphone 5 portrait */
+/*@ iphone 5 */
 @media only screen and (max-device-width: 450px)  {
   #summarySlide {
     font-size: 2rem;
