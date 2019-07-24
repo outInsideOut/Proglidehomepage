@@ -618,7 +618,7 @@ a {
 /*  */
 /* FAQ Page */
 .faqPage {
-  height: 200vh;
+  /* height: 200vh; */
 }
 .faqTitle {
   box-sizing: border-box;
@@ -651,12 +651,16 @@ a {
   top: 36rem;
   padding: 6rem;
 }
-.FAQs img{
+.FAQs .lines{
   height: 0.5rem;
   width: 50rem;
 }
+.FAQs .dots {
+  height: 1rem;
+  margin-bottom: 2.5rem;
+}
 .FAQs p {
-  margin-bottom: 6rem;
+  margin-bottom: 2.5rem;
 }
 
 
@@ -676,7 +680,7 @@ a {
   top: calc(100vh + 22rem);
 }
 .faqPage .footer {
-  top: 114rem;
+  top: 110rem;
 }
 .contact .footer {
   top: 100vh;
@@ -865,7 +869,7 @@ a {
   .FAQs {
     padding:2rem;
   }
-  .FAQs img {
+  .FAQs .lines {
     width: 30rem;
   }
   .faqPage .footer {
@@ -972,7 +976,7 @@ a {
     top: 31.8rem;
   }
   .faqPage .footer {
-    top: 100rem;
+    top: 98rem;
   }
 }
 @media only screen and (max-height: 602px) and (orientation: landscape) {
@@ -1008,13 +1012,18 @@ a {
       left: calc(50% - 280px);
       top: calc(50% - 200px);
   }
-
+  .faqPage .footer {
+    top: 100rem;
+  }
 
 }
 
 @media only screen and (max-width: 900px) {
+  .faqPage .footer {
+    top: 105rem;
+  }
 }
-@media only screen and (max-width: 850px) and (orientation: landscape) {
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
   .customiser .customDoor, .customDoor > img {
     width: 460px;
   }
@@ -1028,7 +1037,17 @@ a {
   /* .colourName {
     top: 2rem;
   } */
+  .faqTitle {
+    height: 21rem;
+  }
+  .FAQs {
+    top: 32.8rem;
+  }
+  .faqPage .footer {
+    top: 107rem;
+  }
 }
+
 @media only screen and (max-width: 800px) {
   html {
     /* font-size: 12px; */
@@ -1066,6 +1085,7 @@ a {
   }
 
 
+
 }
 /* ipad portrait */
 @media only screen and (max-device-width: 800px) and (orientation: portrait) {
@@ -1084,6 +1104,12 @@ a {
     padding: 0 1rem 0 1rem;
     height: 40rem;
   }
+  .faqTitle h2 {
+    font-size: 4.5rem;
+  }
+  .faqTitle p {
+    font-size: 2.5rem;
+  }
   .FAQs {
     top: 51.8rem;
   }
@@ -1094,10 +1120,15 @@ a {
     font-size: 3rem;
   }
   .faqPage .footer {
-    top: 125rem;
+    top: 240rem;
   }
 
 
+}
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+  .faqPage .footer {
+    top: 107rem;
+  }
 }
 /* ipad landscape */
 @media only screen and (max-device-width: 1100px) and (orientation: landscape) {
@@ -1300,6 +1331,13 @@ a {
     padding: 0 1rem 0 1rem;
     height: 40rem;
   }
+  .faqTitle h2 {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+  .faqTitle p {
+    font-size: 2rem;
+  }
   .FAQs {
     top: 51.8rem;
   }
@@ -1310,7 +1348,7 @@ a {
     font-size: small;
   }
   .faqPage .footer {
-    top: 196rem;
+    top: 190rem;
   }
 
   .dropNav a {
@@ -1320,9 +1358,26 @@ a {
     margin-top: 3rem;
   }
 }
-@media only screen and (max-device-width: 400px) and (orientation: portrait) {
+
+@media only screen and (max-device-width: 400px)  {
   .customiser .customDoor {
     top: calc(30vh - 350px);
+  }
+
+  .faqPage .footer {
+    top: 190rem;
+  }
+
+  .faqPage p {
+    font-size: ;
+  }
+}
+@media only screen and (max-device-width: 350px) {
+  .faqTitle p {
+    font-size: 1rem;
+  }
+  .faqPage .footer {
+    top: 215rem;
   }
 }
 
