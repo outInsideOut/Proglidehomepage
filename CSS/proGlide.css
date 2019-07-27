@@ -1335,23 +1335,31 @@ a {
     height: 43rem;
   }
   .faqTitle h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 0;
+  }
+  .faqTitle img{
+    width: 10rem;
   }
   .faqTitle p {
     font-size: 2rem;
   }
   .FAQs {
     top: 54.8rem;
+    height: 127rem;
+    padding: 2rem;
   }
   .FAQs h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .FAQs p {
-    font-size: small;
+    font-size: 1rem;
+  }
+  .FAQs .lines {
+    width: 15rem;
   }
   .faqPage .footer {
-    top: 196rem;
+    top: 180rem;
   }
 
   .dropNav a {
@@ -1366,9 +1374,11 @@ a {
   .customiser .customDoor {
     top: calc(30vh - 350px);
   }
-
+  .FAQs{
+    height: 137rem;
+  }
   .faqPage .footer {
-    top: 196rem;
+    top: 189rem;
   }
 
   .faqPage p {
@@ -1377,7 +1387,10 @@ a {
 }
 @media only screen and (max-device-width: 350px) {
   .faqTitle p {
-    font-size: 1rem;
+    font-size: 1.8rem;
+  }
+  .FAQs {
+    height: 167rem;
   }
   .faqPage .footer {
     top: 221rem;
