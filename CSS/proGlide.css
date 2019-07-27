@@ -1385,7 +1385,7 @@ a {
     font-size: ;
   }
 }
-@media only screen and (max-device-width: 350px) {
+@media only screen and (max-device-width: 360px) {
   .faqTitle p {
     font-size: 1.8rem;
   }
