@@ -982,6 +982,12 @@ a {
     top: 98rem;
   }
 }
+@media only screen and (max-device-width: 1100px) {
+  .customDoorEG {
+      left: calc(50vw - 225px);
+      top: 360px;
+  }
+}
 @media only screen and (max-height: 602px) and (orientation: landscape) {
   .colourName {
     top: calc(50% + 9rem);
@@ -1266,23 +1272,25 @@ a {
 /*@ iphone 5 */
 @media only screen and (max-device-width: 450px)  {
   #summarySlide {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .textBar2 p {
-    font-size: 1.3rem;
+  .paraline1 {
+    width: 340px;
+    left: calc(50vw - 170px);
   }
+
   .section2 {
-    height: calc(153.75rem + 3.2rem);
+    height: calc(121.45rem + 3.2rem);
   }
   .textBar2 {
     padding: 0 2rem;
   }
-  .textBar2 > p {
-    font-size: 2.5rem;
+  .textBar2 p {
+    font-size: 1.5rem;
   }
   #colourBar {
     top: 70rem;
-    height: 85rem;
+    height: 53rem;
   }
   #colourBar h2 {
     font-size: 3rem;
@@ -1291,12 +1299,12 @@ a {
     font-size: 1rem;
   }
   .customDoorEG, .customDoorEG img {
-    height: 27rem;
-    width: 41rem;
+    height: 13rem;
+    width: 20rem;
   }
   .customDoorEG {
-    top: 56rem;
-    left: calc(50vw - 20.5rem);
+    top: 33rem;
+    left: calc(50vw - 10rem);
   }
   .customDoorEG a {
     left: calc(50% - 81.5px);
@@ -1304,8 +1312,11 @@ a {
   .button > a {
     font-size: 2.5rem;
   }
-  .section3, .homepage > .footer {
-    transform: translateY(65rem);
+  .section3 {
+    top: 201rem;
+  }
+  .homepage .footer {
+    top: 231rem;
   }
   .customiser {
     height: 80vh;
@@ -1363,14 +1374,18 @@ a {
   }
 
   .dropNav a {
-    font-size: 4rem;
+    font-size: 2rem;
   }
-  .dropNav li {
-    margin-top: 3rem;
+
+  .dropNav:first-child {
+    margin-top: 4rem;
   }
 }
 
 @media only screen and (max-device-width: 400px)  {
+  .customDoorEG {
+    top: 35rem;
+  }
   .customiser .customDoor {
     top: calc(30vh - 350px);
   }
@@ -1386,6 +1401,29 @@ a {
   }
 }
 @media only screen and (max-device-width: 360px) {
+  .fadeBox {
+    top: 3rem;
+  }
+  .paraline1 {
+    width: 300px;
+    left: calc(50vw - 150px);
+  }
+  .fadeBox p {
+    margin: 1rem 2rem;
+  }
+  .paraline2 {
+    width: 250px;
+    left: calc(50vw - 125px);
+  }
+  .fadeBox p {
+    margin: 1rem 2rem;
+  }
+  .customDoorEG, .customDoorEG img {
+    width: 18rem;
+  }
+  .customDoorEG {
+    left: calc(50vw - 9rem);
+  }
   .faqTitle p {
     font-size: 1.8rem;
   }
@@ -1399,7 +1437,14 @@ a {
     top: 214rem;
   }
 }
-
+@media only screen and (max-device-width: 340px) {
+  .textBar2 p {
+    font-size: 1.2rem;
+  }
+  .textBar2 {
+    top: 8rem;
+  }
+}
 @media only screen and (max-width: 300px) and (orientation: portrait) {
   #summarySlide {
     font-size: 1rem;
