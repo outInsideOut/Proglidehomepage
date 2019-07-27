@@ -1390,10 +1390,13 @@ a {
     font-size: 1.8rem;
   }
   .FAQs {
-    height: 167rem;
+    height: 160rem;
+  }
+  .FAQs .last {
+    margin-bottom: 4rem;
   }
   .faqPage .footer {
-    top: 221rem;
+    top: 214rem;
   }
 }
 
