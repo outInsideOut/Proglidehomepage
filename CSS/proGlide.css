@@ -923,7 +923,7 @@ a {
   }
   .customDoorEG {
     left: calc(50vw - 225px);
-    top: 520px;
+    top: 370px;
   }
   #colourBar {
     height: 45rem;
@@ -979,13 +979,28 @@ a {
     top: 31.8rem;
   }
   .faqPage .footer {
-    top: 98rem;
+    top: 102rem;
   }
 }
 @media only screen and (max-device-width: 1100px) {
+  /* #colourBar h2 {
+    font-size: 3rem;
+  }
+  .colourBarText > p {
+    font-size: 1.5rem;
+  }
+  #colourBar {
+    height: 55rem;
+  }
+
   .customDoorEG {
       left: calc(50vw - 225px);
-      top: 360px;
+      top: 500px;
+  } */
+}
+@media only screen and (max-device-width: 1100px) and (orientation: landscape) {
+  .content p {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-height: 602px) and (orientation: landscape) {
@@ -1034,14 +1049,14 @@ a {
 }
 @media only screen and (max-device-width: 850px) and (orientation: landscape) {
   .customiser .customDoor, .customDoor > img {
-    width: 460px;
+    width: 360px;
   }
   .customDoor {
-      left: calc(50% - 230px);
-      top: calc(50% - 200px);
+    left: calc(35vw - 180px);
+    top: 2rem;
   }
   .colourName {
-      top: calc(50% + 5rem);
+      top: 13rem;
   }
   /* .colourName {
     top: 2rem;
@@ -1135,16 +1150,34 @@ a {
 
 }
 @media only screen and (max-device-width: 800px) and (orientation: landscape) {
+  .content p {
+    font-size: 1.2rem;
+  }
   .faqPage .footer {
     top: 107rem;
   }
 }
-/* ipad landscape */
-@media only screen and (max-device-width: 1100px) and (orientation: landscape) {
-  .content p {
-    font-size: 1.8rem;
+@media only screen and (max-device-width: 700px) {
+  .
+  .faqTitle {
+    height: 22rem;
+  }
+  .faqTitle h2 {
+    margin-top: 1.5rem;
+  }
+  .FAQs .lines {
+    width: 25rem;
+  }
+
+  .FAQs, .faqPage .footer {
+    transform: translateY(1rem);
+  }
+  .faqPage .footer {
+    top: 117rem;
   }
 }
+/* ipad landscape */
+
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   .customDoorEG {
     top: 512px;
@@ -1322,23 +1355,23 @@ a {
     height: 80vh;
   }
   .customiser .customDoor {
-    top: calc(30vh - 350px);
+    top: 2rem;
   }
   .customiser .customDoor, .customDoor > img {
     width: 90vw;
   }
   .colourName {
-    top: 47vh;
-    font-size: 4rem;
+    top: 18rem;
+    font-size: 2rem;
   }
   .colourPage .section1 {
     height: calc(100vh);
   }
   .colour p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .colourpage .footer {
-    height: calc(20vh - 7.8rem);
+
     top: calc(80vh + 7.8rem)
   }
   .faqTitle {
@@ -1348,6 +1381,7 @@ a {
   .faqTitle h2 {
     font-size: 3rem;
     margin-bottom: 0;
+    margin-top: 3rem;
   }
   .faqTitle img{
     width: 10rem;
@@ -1386,8 +1420,8 @@ a {
   .customDoorEG {
     top: 35rem;
   }
-  .customiser .customDoor {
-    top: calc(30vh - 350px);
+  .colourName {
+    top: 16rem;
   }
   .FAQs{
     height: 137rem;
@@ -1424,18 +1458,17 @@ a {
   .customDoorEG {
     left: calc(50vw - 9rem);
   }
+  .faqTitle h2 {
+    margin-top: 5rem;
+  }
   .faqTitle p {
     font-size: 1.8rem;
   }
-  .FAQs {
-    height: 160rem;
-  }
+
   .FAQs .last {
     margin-bottom: 4rem;
   }
-  .faqPage .footer {
-    top: 214rem;
-  }
+
 }
 @media only screen and (max-device-width: 340px) {
   .textBar2 p {
@@ -1444,6 +1477,22 @@ a {
   .textBar2 {
     top: 8rem;
   }
+  .colourName {
+    top: 13rem;
+  }
+  .colourpage .footer {
+    top: calc(80vh + 7rem);
+  }
+  .faqTitle h2 {
+    margin-top: 3rem;
+  }
+  .FAQs {
+    height: 160rem;
+  }
+
+  .faqPage .footer {
+    top: 214rem;
+  }
 }
 @media only screen and (max-width: 300px) and (orientation: portrait) {
   #summarySlide {
@@ -1451,20 +1500,6 @@ a {
   }
 }
 
-@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 3) and  (orientation:portrait) {
-  .dropNav {
-    font-size: 4rem;
-  }
-
-
-
-
-}
-@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 3) and (orientation:landscape) {
-
-
-
-}
 /*
  @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
   .section3, .homepage > .footer {
