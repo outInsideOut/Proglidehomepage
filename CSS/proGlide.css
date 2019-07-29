@@ -855,7 +855,7 @@ a {
 }
 @media only screen and (max-width: 1200px) and (orientation: landscape){
   html {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .textBar2 {
     padding: 0 6rem;
@@ -1180,7 +1180,7 @@ a {
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   .customDoorEG {
-    top: 512px;
+    top: 362px;
   }
 }
 @media only screen and (max-width: 800px) and (orientation: portrait) {
