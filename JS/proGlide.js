@@ -1,5 +1,5 @@
 var windowWidth, windowHeight;
-
+var pageName;
 // function noRepeat() {
 //   console.log("hidden")
 //   if (sessionStorage.entry) {
@@ -10,6 +10,9 @@ var windowWidth, windowHeight;
 // noRepeat();
 
 $(document).ready(function(){
+  pageName=$("body").attr("class");
+
+
   if (sessionStorage.entry) {
     $("#entry").css("display", "none");
     $(".homepage").removeClass("entryLock");
@@ -22,7 +25,8 @@ $(document).ready(function(){
   console.log("hidden")
 
   window.addEventListener("orientationchange", function() {
-    location.reload();
+    if (pageName != "gallery" && pageName != "colourPage")
+      location.reload();
   });
   //slide up entryLogo
   $(".logoBox").click(function() {

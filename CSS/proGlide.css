@@ -547,6 +547,10 @@ a {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: 0.5s all;
+}
+.gridWrap .img:hover {
+  transform: scale(1.1);
 }
 
 /* fullscreen */
@@ -622,7 +626,7 @@ a {
 }
 .faqTitle {
   box-sizing: border-box;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 13rem;
   height: 20rem;
@@ -666,6 +670,59 @@ a {
   margin-bottom: 8rem;
 }
 
+/*  */
+/*  */
+/* ReviewsPage */
+.reviewsPage .section1 {
+  height: 163rem;
+}
+.reviewBar1 {
+  top: 14rem;
+}
+.reviewBar1 h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+.reviewBar1 .lines {
+  height: 0.5rem;
+  margin-bottom: 2rem;
+}
+.reviewsPage .button {
+  position: relative;
+  left: -5.5rem;
+  margin-bottom: 2rem;
+}
+.reviewBar1 p {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.reviewsPage .blueBand {
+  padding: 2rem 0rem;
+  top: 45rem;
+  text-align: center;
+}
+.reviewsPage .reviewBand img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviewsPage .blueBand .stars {
+  transform: scale(0.7);
+  margin: 0.5rem auto;
+}
+.reviewsPage .blueBand p {
+  padding: 0 2rem;
+}
+.reviewsPage .dots {
+  transform: scale(0.3) translateX(-2rem);
+  margin: 4rem auto;
+}
+
+.ReviewBar2 {
+  top: 132rem;
+  height: 20rem;
+}
 
 /*  */
 /*  */
@@ -687,6 +744,9 @@ a {
 }
 .contact .footer {
   top: 100vh;
+}
+.reviewsPage .footer {
+  top: 162rem;
 }
 .footer h2 {
   letter-spacing: 1rem;
@@ -981,28 +1041,12 @@ a {
   .faqPage .footer {
     top: 102rem;
   }
-}
-@media only screen and (max-device-width: 1100px) {
-  /* #colourBar h2 {
-    font-size: 3rem;
-  }
-  .colourBarText > p {
-    font-size: 1.5rem;
-  }
-  #colourBar {
-    height: 55rem;
-  }
 
-  .customDoorEG {
-      left: calc(50vw - 225px);
-      top: 500px;
-  } */
-}
-@media only screen and (max-device-width: 1100px) and (orientation: landscape) {
-  .content p {
-    font-size: 1.8rem;
+  .ReviewBar2 {
+    top: 138rem;
   }
 }
+
 @media only screen and (max-height: 602px) and (orientation: landscape) {
   .colourName {
     top: calc(50% + 9rem);
@@ -1020,7 +1064,7 @@ a {
   }
 
   .colourName {
-    top: calc(50%  + 9rem);
+    top: calc(50%  + 12rem);
   }
 }
 
@@ -1046,31 +1090,12 @@ a {
   .faqPage .footer {
     top: 105rem;
   }
-}
-@media only screen and (max-device-width: 850px) and (orientation: landscape) {
-  .customiser .customDoor, .customDoor > img {
-    width: 360px;
-  }
-  .customDoor {
-    left: calc(35vw - 180px);
-    top: 2rem;
-  }
-  .colourName {
-      top: 13rem;
-  }
-  /* .colourName {
-    top: 2rem;
-  } */
-  .faqTitle {
-    height: 21rem;
-  }
-  .FAQs {
-    top: 32.8rem;
-  }
-  .faqPage .footer {
-    top: 107rem;
+  .reviewBar1 {
+    top: 11rem;
   }
 }
+
+
 
 @media only screen and (max-width: 800px) {
   html {
@@ -1107,75 +1132,18 @@ a {
     top: 5px;
     right: 5px;
   }
-
-
-
+  .reviewsPage .section1 {
+    height: 173rem;
+  }
+  .ReviewBar2 {
+    top: 145rem;
+  }
+  .reviewsPage .footer {
+    top: 172rem;
+  }
 }
 /* ipad portrait */
-@media only screen and (max-device-width: 800px) and (orientation: portrait) {
-  .content p {
-    font-size: 2.5rem;
-  }
-  .customiser .customDoor {
-    top: calc(35vh - 350px);
-  }
-  .colourName {
-    top: 55vh;
-    font-size: 4rem;
-  }
 
-  .faqTitle {
-    padding: 0 1rem 0 1rem;
-    height: 40rem;
-  }
-  .faqTitle h2 {
-    font-size: 4.5rem;
-  }
-  .faqTitle p {
-    font-size: 2.5rem;
-  }
-  .FAQs {
-    top: 51.8rem;
-  }
-  .FAQs h2 {
-    font-size: 3.5rem;
-  }
-  .FAQs p {
-    font-size: 3rem;
-  }
-  .faqPage .footer {
-    top: 240rem;
-  }
-
-
-}
-@media only screen and (max-device-width: 800px) and (orientation: landscape) {
-  .content p {
-    font-size: 1.2rem;
-  }
-  .faqPage .footer {
-    top: 107rem;
-  }
-}
-@media only screen and (max-device-width: 700px) {
-  .
-  .faqTitle {
-    height: 22rem;
-  }
-  .faqTitle h2 {
-    margin-top: 1.5rem;
-  }
-  .FAQs .lines {
-    width: 25rem;
-  }
-
-  .FAQs, .faqPage .footer {
-    transform: translateY(1rem);
-  }
-  .faqPage .footer {
-    top: 117rem;
-  }
-}
 /* ipad landscape */
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
@@ -1233,6 +1201,7 @@ a {
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .customiser {
     grid-template-rows: 1fr 1fr 1fr 1.7fr;
@@ -1255,6 +1224,7 @@ a {
       top: calc(50% + 3rem);
   }
 }
+
 @media only screen and (max-width: 500px) {
   .textBar2 {
     top: 2rem;
@@ -1300,6 +1270,144 @@ a {
   }
   .customiser .customDoor {
     top: 4rem;
+  }
+}
+
+@media only screen and (max-device-width: 1100px) {
+  /* #colourBar h2 {
+    font-size: 3rem;
+  }
+  .colourBarText > p {
+    font-size: 1.5rem;
+  }
+  #colourBar {
+    height: 55rem;
+  }
+
+  .customDoorEG {
+      left: calc(50vw - 225px);
+      top: 500px;
+  } */
+}
+@media only screen and (max-device-width: 1100px) and (orientation: landscape) {
+  .content p {
+    font-size: 1.8rem;
+  }
+  .colourName {
+    top: 37rem;
+  }
+}
+@media only screen and (max-device-width: 850px) {
+  .gridWrap {
+    padding: 2rem 1rem;
+    grid-gap: 0.5rem;
+  }
+}
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+  .customiser .customDoor, .customDoor > img {
+    width: 360px;
+  }
+  .customDoor {
+    left: calc(35vw - 180px);
+    top: 2rem;
+  }
+  .colourName {
+      top: 17rem;
+  }
+  /* .colourName {
+    top: 2rem;
+  } */
+  .faqTitle {
+    height: 21rem;
+  }
+  .FAQs {
+    top: 32.8rem;
+  }
+  .faqPage .footer {
+    top: 107rem;
+  }
+}
+@media only screen and (max-device-width: 800px) and (orientation: portrait) {
+  .content p {
+    font-size: 2.5rem;
+  }
+  .customiser .customDoor {
+    top: 5rem;
+  }
+  .colourName {
+    top: 55vh;
+    font-size: 4rem;
+  }
+
+  .faqTitle {
+    padding: 0 1rem 0 1rem;
+    height: 40rem;
+  }
+  .faqTitle h2 {
+    font-size: 4.5rem;
+  }
+  .faqTitle p {
+    font-size: 2.5rem;
+  }
+  .FAQs {
+    top: 51.8rem;
+  }
+  .FAQs h2 {
+    font-size: 3.5rem;
+  }
+  .FAQs p {
+    font-size: 3rem;
+  }
+  .faqPage .footer {
+    top: 240rem;
+  }
+
+
+}
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+  .colourName {
+    top: 17rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .faqPage .footer {
+    top: 107rem;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+
+  .faqTitle {
+    height: 22rem;
+  }
+  .faqTitle h2 {
+    margin-top: 1.5rem;
+  }
+  .FAQs .lines {
+    width: 25rem;
+  }
+
+  .FAQs, .faqPage .footer {
+    transform: translateY(1rem);
+  }
+  .faqPage .footer {
+    top: 117rem;
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  .colourName {
+    top: 14rem;
+  }
+}
+@media only screen and (max-device-width: 600px) and (orientation: landscape) {
+  .customiser .customDoor, .customDoor > img {
+    width: 300px;
+  }
+  .customDoor {
+    left: calc(35vw - 150px);
+  }
+  .ReviewBar2 {
+    top: 150rem;
   }
 }
 /*@ iphone 5 */
@@ -1374,6 +1482,9 @@ a {
 
     top: calc(80vh + 7.8rem)
   }
+
+
+
   .faqTitle {
     padding: 0 1rem 0 1rem;
     height: 43rem;
@@ -1406,7 +1517,36 @@ a {
   .faqPage .footer {
     top: 180rem;
   }
-
+  .reviewsPage .section1 {
+    height: 193rem;
+  }
+  .reviewsPage .button {
+    left: -4.7rem;
+  }
+  .reviewsPage .button a {
+    font-size: 1.5rem;
+  }
+  .reviewsPage .blueBand {
+    top: 50rem;
+  }
+  .reviewsPage .underlines {
+    width: 20rem;
+  }
+  .reviewsPage .stars {
+    width: 15rem;
+  }
+  .reviewsPage .dots {
+    position: relative;
+    transform: scale(0.2) translateX(-2rem);
+    margin: 2rem auto;
+    left: -1.7rem;
+  }
+  .ReviewBar2 {
+    top: 155rem;
+  }
+  .reviewsPage .footer {
+    top: 180rem;
+  }
   .dropNav a {
     font-size: 2rem;
   }
@@ -1432,6 +1572,18 @@ a {
 
   .faqPage p {
     font-size: ;
+  }
+  .reviewsPage .section1 {
+    height: 203rem;
+  }
+  .reviewsPage .blueBand {
+    top: 53rem;
+  }
+  .ReviewBar2 {
+    top: 170rem;
+  }
+  .reviewsPage .footer {
+    top: 195rem;
   }
 }
 @media only screen and (max-device-width: 360px) {
@@ -1492,6 +1644,22 @@ a {
 
   .faqPage .footer {
     top: 214rem;
+  }
+
+  .reviewsPage .section1 {
+    height: 210rem;
+  }
+  .reviewsPage .blueBand {
+    top: 58rem;
+  }
+  .ReviewBar2 {
+    top: 185rem;
+  }
+  .reviewsPage .button {
+    left: -4.25rem;
+  }
+  .reviewsPage .footer {
+    top: 207rem;
   }
 }
 @media only screen and (max-width: 300px) and (orientation: portrait) {
