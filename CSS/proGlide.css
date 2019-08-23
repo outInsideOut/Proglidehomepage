@@ -251,13 +251,17 @@ a {
   margin-top: 5px;
 }
 
-.section2 {
+ .section2 {
   background-image: url(../Assets/homepage.jpg);
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
+    height: 70.6rem;
+}
+
+.homepage .section2 {
   top: 71.4rem;
-  height: 70.6rem;
+
 }
 .textBar2 {
   box-sizing: border-box;
@@ -630,10 +634,11 @@ a {
 }
 .faqTitle img {
   width: 16rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .faqTitle p {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 .FAQs {
   box-sizing: border-box;
@@ -716,21 +721,24 @@ a {
 /* contact */
 /*  */
 #map {
-  height: 200px;
+  height: 12.5rem;
   width: 100vw;
   position: absolute;
-  top: 50rem;
+  top: 8rem;
 }
 .contact .section1 {
-  height: 200vh;
+  height: 50rem;
 }
 .contact .contactBlurb {
   top: 15rem;
+  font-size: 2rem;
 }
 .contact .section2 {
   top: 40rem;
 }
-.contact .blueBand {
+.contact .blueBand{
+  /* box-sizing: border-box; */
+  padding-top: 2rem;
   text-align: center;
 }
 .contact form {
@@ -763,6 +771,10 @@ button.formField {
   background-color: #252769;
   box-shadow: 0 0 5px #000;
 }
+.where2findUs {
+  top: 40rem;
+  height: 20rem;
+}
 /*  */
 /*  */
 /* footer */
@@ -782,7 +794,7 @@ button.formField {
   top: 110rem;
 }
 .contact .footer {
-  top: 200vh;
+  top: 110rem;
 }
 .reviewsPage .footer {
   top: 162rem;
@@ -998,7 +1010,7 @@ button.formField {
   .fullNav {
       display: none;
   }
-  .section2 {
+  .homepage .section2 {
     height: 91.6rem;
   }
 
@@ -1180,6 +1192,10 @@ button.formField {
   .reviewsPage .footer {
     top: 172rem;
   }
+
+  .contact .contactBlurb {
+    top: 13rem;
+  }
 }
 /* ipad portrait */
 
@@ -1284,7 +1300,7 @@ button.formField {
   .fadeBox p {
     margin: 2rem;
   }
-  .section2 {
+  .homepage .section2 {
     top: 76.6rem;
     height: 116.6rem;
   }
@@ -1432,10 +1448,27 @@ button.formField {
   .faqPage .footer {
     top: 117rem;
   }
+
+  .formField {
+    width: 35rem;
+
+  }
+  .contact form {
+    transform: translateX(calc(50vw - 17.5rem));
+  }
 }
 @media only screen and (max-device-width: 600px) {
   .colourName {
     top: 14rem;
+  }
+  .formBox img {
+    width: 20rem;
+  }
+  .formField {
+    width: 20rem;
+  }
+  .contact form {
+    transform: translateX(calc(50vw - 10rem));
   }
 }
 @media only screen and (max-device-width: 600px) and (orientation: landscape) {
@@ -1459,7 +1492,7 @@ button.formField {
     left: calc(50vw - 170px);
   }
 
-  .section2 {
+  .homepage .section2 {
     height: calc(121.45rem + 3.2rem);
   }
   .textBar2 {
@@ -1586,6 +1619,11 @@ button.formField {
   .reviewsPage .footer {
     top: 180rem;
   }
+
+  .contact .contactBlurb {
+    top: 11rem;
+  }
+
   .dropNav a {
     font-size: 2rem;
   }
@@ -1623,6 +1661,9 @@ button.formField {
   }
   .reviewsPage .footer {
     top: 195rem;
+  }
+  .contact .contactBlurb {
+    top: 10rem;
   }
 }
 @media only screen and (max-device-width: 360px) {
