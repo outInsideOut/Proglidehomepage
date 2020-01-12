@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
 
   //call slideSum() every 5600ms
-  setInterval(slideSum, 5800);
+  setInterval(slideSum, 8800);
 
   //to open side menu when hamburder icon is clicked on smaller screens
   var side = document.getElementById('dropNav');
@@ -146,7 +146,7 @@ function initMap() {
 var id = 1;
 function slideSum() {
   console.log(id)
-  $("#box" + id).fadeIn(300).delay(5000).fadeOut(300);
+  $("#box" + id).fadeIn(300).delay(8000).fadeOut(300);
   if (id == 3) {
     id = 1;
   }

@@ -21,6 +21,8 @@ body {
   height: 71.6rem;
   background-image: url(../Assets/Largeblack3.JPG);
   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 body, section, nav{
@@ -255,13 +257,14 @@ a {
   background-image: url(../Assets/homepage.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   position: absolute;
     height: 70.6rem;
 }
 
 .homepage .section2 {
   top: 71.4rem;
-
+  height: 63.6rem;
 }
 .textBar2 {
   box-sizing: border-box;
@@ -278,7 +281,7 @@ a {
 #colourBar {
   position: absolute;
 
-  top: 39rem;
+  top: 32rem;
   height: 30rem;
 }
 .colourBarText {
@@ -298,12 +301,12 @@ a {
 }
 #colourBar .underline1 {
   height: 2px;
-  width: 150px;
-  left: calc(25vw - 75px);
-}
-#colourBar .underline2 {
   width: 180px;
   left: calc(25vw - 90px);
+}
+#colourBar .underline2 {
+  width: 150px;
+  left: calc(25vw - 75px);
 }
 .colourBarText img {
   position: relative;
@@ -368,8 +371,9 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   position: absolute;
-  top: 142rem;
+  top: 135rem;
   height: 30rem;
 }
 .section3 > .textBar {
@@ -707,7 +711,7 @@ a {
   padding: 0 2rem;
 }
 .reviewsPage .dots {
-  transform: scale(0.3) translateX(-2rem);
+  width: 10rem;
   margin: 4rem auto;
 }
 
@@ -730,7 +734,7 @@ a {
   height: 50rem;
 }
 .contact .contactBlurb {
-  top: 15rem;
+  top: 17rem;
   font-size: 2rem;
 }
 .contact .section2 {
@@ -784,7 +788,7 @@ button.formField {
   text-align: center;
 }
 .homepage > .footer {
-  top: 172rem;
+  top: 165rem;
 }
 .gallery .footer {
 
@@ -803,17 +807,19 @@ button.formField {
   letter-spacing: 1rem;
   margin-top: 1rem;
 }
-
+.footer p {
+  padding: 0 10px;
+}
 .footer > .underline1 {
   width: 40rem;
   max-width: 90vw;
   position: relative;
-  left: calc(50vw - 20rem);
+
 }
 .footer > .underline2 {
-  width: 35rem;
+  width: 10rem;
   position: relative;
-  left: calc(50vw - 17.5rem);
+  left: calc(50vw - 5rem);
 }
 .footer > .underline3 {
   width: 10rem;
@@ -1019,10 +1025,10 @@ button.formField {
     font-size: 1rem;
   }
   #colourBar .underline1 {
-    left: calc(50vw - 75px);
+    left: calc(50vw - 90px);
   }
   #colourBar .underline2 {
-    left: calc(50vw - 90px);
+    left: calc(50vw - 75px);
   }
   #colourBar .paraline1 {
     width: 80vw;
@@ -1167,7 +1173,13 @@ button.formField {
   }
 
   #colourBar {
-
+    top: 35rem;
+  }
+  .section3 {
+    top: 153rem;
+  }
+  .homepage .footer {
+    top: 183rem;
   }
   .topbar > img {
     height: 3rem;
@@ -1183,11 +1195,33 @@ button.formField {
     top: 5px;
     right: 5px;
   }
+
+  .customiser .customDoor, .customDoor > img {
+    width: 500px;
+  }
+  .customDoor {
+    left: calc(50% - 250px);
+  }
+  .faqTitle {
+      height: 25rem;
+  }
+  .FAQs {
+    top: 35.8rem;
+  }
+  .FAQs .lines {
+    width: 30rem;
+  }
+  .faqPage .footer {
+    top: 113rem;
+  }
   .reviewsPage .section1 {
     height: 173rem;
   }
   .ReviewBar2 {
     top: 145rem;
+  }
+  .reviewBand .underlines {
+    width: 30rem;
   }
   .reviewsPage .footer {
     top: 172rem;
@@ -1196,6 +1230,8 @@ button.formField {
   .contact .contactBlurb {
     top: 13rem;
   }
+
+
 }
 /* ipad portrait */
 
@@ -1211,13 +1247,18 @@ button.formField {
     top: 400px;
   }
   .customiser .customDoor {
-    top: 7rem;
+    top: 5%;
   }
   .colourName {
-    top: calc(50% + 12rem);
+    top: calc(50% + 9rem);
   }
   .dropNav #closeBttn {
     right: 25px;
+  }
+}
+@media only screen and (max-width: 755px) {
+  .faqPage .footer {
+    top: 130rem;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1261,10 +1302,9 @@ button.formField {
   .customiser {
     grid-template-rows: 1fr 1fr 1fr 1.7fr;
   }
-  .customiser .customdoor {
-    top: 4rem;
+  .colourName {
+    top: calc(50% + 5rem)
   }
-
 }
 /* iphone  5 landscape*/
 @media only screen and (max-width: 600px) and (orientation: landscape) {
@@ -1328,7 +1368,7 @@ button.formField {
   }
 }
 
-@media only screen and (max-device-width: 1100px) {
+@media only screen and (max-device-width: 1100px)  {
   /* #colourBar h2 {
     font-size: 3rem;
   }
@@ -1343,6 +1383,9 @@ button.formField {
       left: calc(50vw - 225px);
       top: 500px;
   } */
+  .ReviewBar2 {
+    top: 134rem;
+  }
 }
 @media only screen and (max-device-width: 1100px) and (orientation: landscape) {
   .content p {
@@ -1356,6 +1399,15 @@ button.formField {
   .gridWrap {
     padding: 2rem 1rem;
     grid-gap: 0.5rem;
+  }
+  .contact .contactBlurb {
+    top: 15rem;
+  }
+  .ReviewBar2 {
+    top: 142rem;
+  }
+  .reviewsPage .button2 {
+    top: -2rem;
   }
 }
 @media only screen and (max-device-width: 850px) and (orientation: landscape) {
@@ -1389,6 +1441,13 @@ button.formField {
   .customiser .customDoor {
     top: 5rem;
   }
+  .customiser .customDoor, .customDoor > img {
+    width: 40rem;
+
+  }
+  .customiser .customDoor {
+    left: calc(50vw - 20rem);
+  }
   .colourName {
     top: 55vh;
     font-size: 4rem;
@@ -1414,12 +1473,15 @@ button.formField {
     font-size: 3rem;
   }
   .faqPage .footer {
-    top: 240rem;
+    top: 307.5rem;
   }
 
 
 }
 @media only screen and (max-device-width: 800px) and (orientation: landscape) {
+  .faqTitle {
+    padding: 0 2rem 0 2rem;
+  }
   .colourName {
     top: 17rem;
   }
@@ -1433,7 +1495,10 @@ button.formField {
 @media only screen and (max-device-width: 700px) {
 
   .faqTitle {
-    height: 22rem;
+    height: 24rem;
+  }
+  .FAQs {
+    top: 34.8rem;
   }
   .faqTitle h2 {
     margin-top: 1.5rem;
@@ -1472,6 +1537,34 @@ button.formField {
   }
 }
 @media only screen and (max-device-width: 600px) and (orientation: landscape) {
+  .textBar1 {
+    top: 10rem;
+  }
+  #summarySlide {
+    top: 20rem;
+  }
+  .homepage .section1 {
+    height: 51.6rem;
+  }
+  .homepage .section2 {
+    top: 51.6rem;
+    height: 76.6rem;
+  }
+  #colourBar {
+    top: 30rem;
+  }
+  .section3 {
+    top: 128.2rem;
+  }
+  .section3 .textBar {
+    top: 5rem;
+  }
+  .section3 {
+    height: 15rem;
+  }
+  .homepage .footer {
+    top: 143.2rem;
+  }
   .customiser .customDoor, .customDoor > img {
     width: 300px;
   }
@@ -1480,6 +1573,9 @@ button.formField {
   }
   .ReviewBar2 {
     top: 150rem;
+  }
+  .faqPage .footer {
+    top: 127rem;
   }
 }
 /*@ iphone 5 */
@@ -1493,16 +1589,17 @@ button.formField {
   }
 
   .homepage .section2 {
-    height: calc(121.45rem + 3.2rem);
+    height: 96.6rem;
   }
   .textBar2 {
     padding: 0 2rem;
+    top: 4rem;
   }
   .textBar2 p {
     font-size: 1.5rem;
   }
   #colourBar {
-    top: 70rem;
+    top: 42rem;
     height: 53rem;
   }
   #colourBar h2 {
@@ -1526,16 +1623,17 @@ button.formField {
     font-size: 2.5rem;
   }
   .section3 {
-    top: 201rem;
+    top: 173.2rem;
   }
   .homepage .footer {
-    top: 231rem;
+    top: 203.2rem;
   }
   .customiser {
     height: 80vh;
   }
   .customiser .customDoor {
     top: 2rem;
+    left: 5vw;
   }
   .customiser .customDoor, .customDoor > img {
     width: 90vw;
@@ -1586,6 +1684,9 @@ button.formField {
   .FAQs .lines {
     width: 15rem;
   }
+  .FAQs .dots {
+    transform: scale(0.5);
+  }
   .faqPage .footer {
     top: 180rem;
   }
@@ -1609,17 +1710,30 @@ button.formField {
   }
   .reviewsPage .dots {
     position: relative;
-    transform: scale(0.2) translateX(-2rem);
+    width: 10rem;
     margin: 2rem auto;
-    left: -1.7rem;
+
   }
   .ReviewBar2 {
-    top: 155rem;
+    top: 153rem;
+  }
+  .ReviewBar2 h2 {
+    position: relative;
+    top: 2rem;
+  }
+
+  .ReviewBar2 .button {
+    position: relative;
+    top: 0rem;
   }
   .reviewsPage .footer {
     top: 180rem;
   }
-
+  .footer > .underline1 {
+    width: 70vw;
+    position: absolute;
+    left: 15vw;
+  }
   .contact .contactBlurb {
     top: 11rem;
   }
@@ -1634,8 +1748,33 @@ button.formField {
 }
 
 @media only screen and (max-device-width: 400px)  {
+  .homepage .section1 {
+    height: 71.6rem;
+  }
+
+  .textBar1 {
+    top: 15rem;
+  }
+  #summarySlide {
+    top: 35rem;
+  }
+  .homepage .section2 {
+    top: 71.6rem;
+  }
+  .textBar2 {
+    top: 2rem;
+  }
   .customDoorEG {
     top: 35rem;
+  }
+  .section3 {
+    top: 168.2rem;
+  }
+  .section3 .textBar {
+    top: 6rem;
+  }
+  .homepage .footer {
+    top: 190.2rem;
   }
   .colourName {
     top: 16rem;
@@ -1657,13 +1796,24 @@ button.formField {
     top: 53rem;
   }
   .ReviewBar2 {
-    top: 170rem;
+    top: 168rem;
   }
   .reviewsPage .footer {
     top: 195rem;
   }
   .contact .contactBlurb {
-    top: 10rem;
+    top: 12rem;
+  }
+
+  .contact .section2 {
+    top: 45rem;
+  }
+  .formBox img {
+    width: 15rem;
+  }
+
+  .where2findUs {
+    top: 37rem;
   }
 }
 @media only screen and (max-device-width: 360px) {
@@ -1690,6 +1840,10 @@ button.formField {
   .customDoorEG {
     left: calc(50vw - 9rem);
   }
+  .colourName {
+    top: 14rem;
+  }
+
   .faqTitle h2 {
     margin-top: 5rem;
   }
@@ -1707,7 +1861,7 @@ button.formField {
     font-size: 1.2rem;
   }
   .textBar2 {
-    top: 8rem;
+    top: 5rem;
   }
   .colourName {
     top: 13rem;
@@ -1740,6 +1894,23 @@ button.formField {
   }
   .reviewsPage .footer {
     top: 207rem;
+  }
+  .ReviewBar2 h2 {
+    top: 0rem;
+  }
+  .ReviewBar2 .button {
+    top: -2rem;
+  }
+  .contactBox > ul > li > img {
+    height: 20px;
+    padding-left: 14px;
+    transform: translateY(-10px);
+  }
+  .formField {
+    width: 15rem;
+  }
+  .contact form {
+    transform: translateX(calc(50vw - 7.5rem));
   }
 }
 @media only screen and (max-width: 300px) and (orientation: portrait) {
