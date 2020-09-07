@@ -54,6 +54,7 @@ li {
 }
 h2, h3 {
   font-family: steelfish;
+  margin-bottom: 0;
 }
 h3 {
   font-size: 1.7rem;
@@ -84,10 +85,10 @@ a {
   color: red;
 }
 .hamburger {
-	/* for small screen menu  */
-	height: 50px;
-	/* no display when large screens */
-	display: none;
+  /* for small screen menu  */
+  height: 50px;
+  /* no display when large screens */
+  display: none;
 }
 .fullNav {
   position: relative;
@@ -116,8 +117,8 @@ a {
 .textBar {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
-  border-top: 0.1rem solid #252769;
-  border-bottom: 0.1rem solid #252769;
+  border-top: 0.2rem solid #252769;
+  border-bottom: 0.2rem solid #252769;
   overflow: hidden;
   height: auto;
 
@@ -147,7 +148,9 @@ a {
   width: 100vw;
   height: 100vh;
 }
-.homepage {}
+.homepage {
+
+}
 #entry #door {
   position: absolute;
   top: 0;
@@ -176,7 +179,7 @@ a {
   width: 19.5rem;
 }
 .textBar1 {
-  top: 20rem;
+  top: 16rem;
 }
 
 #summarySlide {
@@ -209,7 +212,7 @@ a {
   margin-bottom: 3px;
 }
 
-.blueBand h2 {
+.blueBand h1 {
 
   font-size: 40px;
   letter-spacing: 4px;
@@ -282,7 +285,7 @@ a {
   position: absolute;
 
   top: 32rem;
-  height: 30rem;
+  height: 30.1rem;
 }
 .colourBarText {
   width: 50vw;
@@ -631,7 +634,7 @@ a {
   border-top: .2rem solid #252769;
   border-bottom: .2rem solid #252769;
 }
-.faqTitle h2 {
+.faqTitle h1 {
   font-size: 3rem;
   padding-bottom: 0;
   margin-bottom: .5rem;
@@ -649,7 +652,8 @@ a {
   text-align: center;
   position: absolute;
   top: 36rem;
-  padding: 6rem;
+  padding: 10rem;
+  padding-top: 3rem;
 }
 .FAQs .lines{
   height: 0.5rem;
@@ -658,6 +662,9 @@ a {
 .FAQs .dots {
   height: 1rem;
   margin-bottom: 2.5rem;
+}
+.FAQs > h2 {
+  font-size: 2rem;
 }
 .FAQs p {
   margin-bottom: 2.5rem;
@@ -795,7 +802,7 @@ button.formField {
   top: calc(100vh + 22rem);
 }
 .faqPage .footer {
-  top: 110rem;
+  top: 134rem;
 }
 .contact .footer {
   top: 110rem;
@@ -806,6 +813,7 @@ button.formField {
 .footer h2 {
   letter-spacing: 1rem;
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 .footer p {
   padding: 0 10px;
@@ -856,49 +864,52 @@ button.formField {
 }
 
 .dropNav {
-	/* keeps the side nav for smaller screens in the top left corner */
-	position: fixed;
-	top: 0;
-	left: 0;
-	/* take up whole height of screen */
-	height: 100vh;
-	/* width becomes 100% in script function */
-	width: 0;
-	/* make sure it sits on top of other elements */
-	z-index: 2;
-	background-color: #252769;
-	transition: .5s ease-out all;
-	-webkit-transition: .5s ease-out all;
-	-moz-transition: .5s ease-out all;
-	-ms-transition: .5s ease-out all;
-	overflow-x: hidden;
-	text-align: center;
+  /* keeps the side nav for smaller screens in the top left corner */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* take up whole height of screen */
+  height: 100vh;
+  /* width becomes 100% in script function */
+  width: 0;
+  /* make sure it sits on top of other elements */
+  z-index: 2;
+  background-color: #252769;
+  transition: .5s ease-out all;
+  -webkit-transition: .5s ease-out all;
+  -moz-transition: .5s ease-out all;
+  -ms-transition: .5s ease-out all;
+  overflow-x: hidden;
+  text-align: center;
 }
 .dropNav li {
-	list-style-type: none;
-	padding-top: 3rem;
+  list-style-type: none;
+  padding-top: 3rem;
 }
 .dropNav a {
-	color: white;
-	/* ease-in-out is slower at the start and end of the animation */
-	transition: .3s ease-in-out;
-		-webkit-transition: .3s ease-in-out;
-		-moz-transition: .3s ease-in-out;
-		-ms-transition: .3s ease-in-out;
-	font-size: 2rem;
+  color: white;
+  /* ease-in-out is slower at the start and end of the animation */
+  transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+  font-size: 2rem;
 }
 .dropNav a:hover {
-	color: grey;
+  color: grey;
 }
 .dropNav #closeBttn {
-	height: 50px;
+  height: 50px;
   position: absolute;
-	top: 50px;
-	right: 100px;
+  top: 50px;
+  right: 100px;
 }
 
 
 @media only screen and (orientation: portrait) {
+  #priceBanner {
+    display: none;
+  }
   .customiser {
     /* 6 * 3 */
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -1096,7 +1107,7 @@ button.formField {
     top: 31.8rem;
   }
   .faqPage .footer {
-    top: 102rem;
+    top: 137rem;
   }
 
   .ReviewBar2 {
@@ -1138,7 +1149,7 @@ button.formField {
       top: calc(50% - 200px);
   }
   .faqPage .footer {
-    top: 100rem;
+    top: 130rem;
   }
 
 }
@@ -1473,7 +1484,7 @@ button.formField {
     font-size: 3rem;
   }
   .faqPage .footer {
-    top: 307.5rem;
+    top: 433rem;
   }
 
 
@@ -1672,7 +1683,7 @@ button.formField {
   }
   .FAQs {
     top: 54.8rem;
-    height: 127rem;
+    height: 190rem;
     padding: 2rem;
   }
   .FAQs h2 {
@@ -1688,7 +1699,7 @@ button.formField {
     transform: scale(0.5);
   }
   .faqPage .footer {
-    top: 180rem;
+    top: 234rem;
   }
   .reviewsPage .section1 {
     height: 193rem;
@@ -1753,7 +1764,7 @@ button.formField {
   }
 
   .textBar1 {
-    top: 15rem;
+    top: 14rem;
   }
   #summarySlide {
     top: 35rem;
@@ -1780,10 +1791,10 @@ button.formField {
     top: 16rem;
   }
   .FAQs{
-    height: 137rem;
+    height: 200rem;
   }
   .faqPage .footer {
-    top: 189rem;
+    top: 242rem;
   }
 
   .faqPage p {
@@ -1873,11 +1884,11 @@ button.formField {
     margin-top: 3rem;
   }
   .FAQs {
-    height: 160rem;
+    height: 229rem;
   }
 
   .faqPage .footer {
-    top: 214rem;
+    top: 269rem;
   }
 
   .reviewsPage .section1 {

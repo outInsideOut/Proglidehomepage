@@ -35,7 +35,7 @@ $(document).ready(function(){
     sessionStorage.setItem("entry", "true");
   });
 
-  //call slideSum() every 5600ms
+  //call slideSum() every 8800ms
   setInterval(slideSum, 8800);
 
   //to open side menu when hamburder icon is clicked on smaller screens
@@ -146,11 +146,22 @@ function initMap() {
 var id = 1;
 function slideSum() {
   console.log(id)
+  $("#box" + (id - 1)).hide();
   $("#box" + id).fadeIn(300).delay(8000).fadeOut(300);
   if (id == 3) {
+    $("#box" + (id - 1)).hide();
+    $("#box" + (id - 2)).hide();
     id = 1;
   }
   else {
+    if (id == 2) {
+      $("#box" + (id - 1)).hide();
+      $("#box" + (id + 1)).hide();
+    }
+    else if (id == 1) {
+      $("#box" + (id + 1)).hide();
+      $("#box" + (id + 2)).hide();
+    }
     id++;
   }
 
