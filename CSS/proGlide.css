@@ -10,9 +10,31 @@ html {
   font-size: 16px;
 }
 body {
-
+  /* box-sizing: border-box; */
+  -moz-box-sizing: border-box;
   font-family: bebasNeue;
   letter-spacing: 0.2rem;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+  /* display: none; */
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 .section1 {
   position: absolute;
@@ -148,9 +170,7 @@ a {
   width: 100vw;
   height: 100vh;
 }
-.homepage {
 
-}
 #entry #door {
   position: absolute;
   top: 0;
@@ -341,9 +361,25 @@ a {
   width: 450px;
   background-color: red;
   border: 2px solid white;
-  animation-name: rainbow;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: rainbow;
+          animation-name: rainbow;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {background-color: red;}
+    12.5% {background-color: orange;}
+    25% {background-color: yellow;}
+    37.5% {background-color: green;}
+    50% {background-color: blue;}
+    62.5% {background-color: indigo;}
+    75% {background-color: violet;}
+    87.5% {background-color: darkgrey;}
+    100% {background-color: red;}
+
 }
 
 @keyframes rainbow {
@@ -423,6 +459,7 @@ a {
   position: absolute;
   top: calc(50% - 250px );
   left: calc(50% - 330px);
+  transition: 0.5s all;
 }
 .customDoor > img {
   position: relative;
@@ -435,11 +472,24 @@ a {
   border-radius: 1rem;
   border: 2px solid black;
 
-
 }
+
+
+.customDoor.two img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
 .customiser .customDoor {
     transition: 0.5s all;
     /* margin-top: 2rem; */
+}
+.customDoor.two  {
+  height: 80%;
+  top: 5%;
+  width: auto;
+  background-color: white;
 }
 .colourName {
   font-size: 2rem;
@@ -447,7 +497,7 @@ a {
   position: absolute;
   left: 0;
   right: 0;
-  top: 7rem;
+  top: calc(100% - 10rem);
 }
 .customiser .colourBox {
   grid-column: 5 / 6;
@@ -461,12 +511,81 @@ a {
   flex-wrap: flex;
 
   box-sizing: border-box;
+
+  position: relative;
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.colourBox::-webkit-scrollbar {
+  display: none;
+}
+#innerColourBox {
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: flex;
+
+  box-sizing: border-box;
   padding: 1rem;
   position: relative;
   overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#innerColourBox::-webkit-scrollbar {
+  display: none;
 }
 .colourTitle {
   display: block;
+}
+.colourBox #switches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+  width: 100%;
+  -moz-columns: 2;
+       columns: 2;
+  height: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #b3b3b3;
+  border-bottom: 2px solid #252769;
+}
+#switches .button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 10%;
+
+  box-shadow: 1px 1px 10px #252769;
+  position: relative;
+  
+
+
+  text-align: center;
+  border: solid 2px #252769;
+  transition: 0.5s all;
+  display: flex;
+
+}
+#switches .button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#switches p {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: auto;
+}
+.button.on {
+  color: white;
+  background-color: #252769;
 }
 .colourBox .colour {
 
@@ -558,7 +677,8 @@ a {
   cursor: pointer;
 }
 .gridWrap div > img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   transition: 0.5s all;
@@ -581,9 +701,7 @@ a {
   width: 100vw;
   display: none;
 }
-#fullImg {
 
-}
 #gallcloseBttn {
   height: 60px;
   position: fixed;
@@ -775,6 +893,18 @@ a {
 .contactForm textarea {
   height: 10rem;
 }
+::-webkit-input-placeholder {
+  color: #ebebeb;
+}
+::-moz-placeholder {
+  color: #ebebeb;
+}
+:-ms-input-placeholder {
+  color: #ebebeb;
+}
+::-ms-input-placeholder {
+  color: #ebebeb;
+}
 ::placeholder {
   color: #ebebeb;
 }
@@ -793,6 +923,7 @@ button.formField {
   position: absolute;
   border-bottom: none;
   text-align: center;
+  z-index: 2;
 }
 .homepage > .footer {
   top: 165rem;
@@ -905,11 +1036,16 @@ button.formField {
   right: 100px;
 }
 
-
-@media only screen and (orientation: portrait) {
-  #priceBanner {
-    display: none;
+@media only screen and (min-width: 1500px) {
+  .customiser .customDoor {
+    width: 80%;
+    top: 7%
   }
+  .customDoor > img {
+    width: 100%;
+  }
+}
+@media only screen and (orientation: portrait) {
   .customiser {
     /* 6 * 3 */
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -922,10 +1058,36 @@ button.formField {
   .customiser .colourBox {
     grid-column: 1 / 6;
     grid-row: 4 / 5;
-    display: inline;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     overflow: auto;
     white-space: nowrap;
     border-top: 10px solid #252769;
+    overflow-y: hidden;
+
+  }
+  .colourBox #switches {
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    -moz-columns: 1;
+         columns: 1;
+    z-index: 1;
+    border-right: 2px solid #252769;
+  }
+  #switches .button {
+    top: 0;
+    margin-right: auto;
+  }
+  .customiser #innerColourBox {
+    position: relative;
+    display: inline;
+    overflow: auto;
+    white-space: nowrap;
+
     padding-left: 0.5rem;
     overflow-y: hidden;
   }
@@ -933,6 +1095,7 @@ button.formField {
     width: 20vw;
     display: inline-block;
     margin: auto 0.5rem;
+
   }
 
 
@@ -968,16 +1131,28 @@ button.formField {
 }
 @media only screen and (orientation: landscape) {
   .colourName {
-    top: calc(50% + 12rem);
+    top: calc(100% - 8rem);
+  }
+  #switches .button {
+    height: 80%;
+    top: 10%;
+    border-radius: 5px;
   }
 
+}
+@media only screen and (orientation: portrait) {
+  #switches .button {
+    height: 80%;
+    top: 10%;
+    border-radius: 5px;
+  }
 }
 @media only screen and (max-height: 1500px) and (orientation: portrait) {
   .customiser .customDoor {
     left: 5vw;
   }
   .colourName {
-    top: calc(50% + 18rem);
+    top: calc(100% - 10rem);
   }
 
 }
@@ -1403,7 +1578,7 @@ button.formField {
     font-size: 1.8rem;
   }
   .colourName {
-    top: 37rem;
+    top: calc(100% - 8rem);
   }
 }
 @media only screen and (max-device-width: 850px) {
@@ -1435,6 +1610,9 @@ button.formField {
   /* .colourName {
     top: 2rem;
   } */
+  .colourBox #switches {
+    height: 20%;
+  }
   .faqTitle {
     height: 21rem;
   }
@@ -1463,7 +1641,7 @@ button.formField {
     top: 55vh;
     font-size: 4rem;
   }
-
+  
   .faqTitle {
     padding: 0 1rem 0 1rem;
     height: 40rem;
@@ -1535,7 +1713,7 @@ button.formField {
 }
 @media only screen and (max-device-width: 600px) {
   .colourName {
-    top: 14rem;
+    top: calc(100% - 8rem);
   }
   .formBox img {
     width: 20rem;
@@ -1920,7 +2098,7 @@ button.formField {
   .formField {
     width: 15rem;
   }
-  .contact form {
+  .contact form {     
     transform: translateX(calc(50vw - 7.5rem));
   }
 }
@@ -1969,4 +2147,12 @@ button.formField {
   width: 100vw;
 
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+.off {
+  background-color: #d1d1d1;
+  color: black;
 }

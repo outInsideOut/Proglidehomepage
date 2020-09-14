@@ -95,6 +95,8 @@ $(document).ready(function(){
     $(".colour").css("transition", "0.5s all");
 
     positionImg();
+    sizeAndCenterSingleDoor();
+    sizeAndCenterDoubleDoor();
   });
   if (windowWidth < windowHeight) {
     colBoxHght = $(".colourBox").height();
@@ -113,11 +115,15 @@ $(document).ready(function(){
       colHeight = $(".colour").delay(500).width();
       $(".colour").css("height", colHeight);
     }
+  
   }
 
   positionLogoBox();
-
+  sizeAndCenterSingleDoor();
+  sizeAndCenterDoubleDoor();
   initMap();
+
+  
 });
 
 function positionLogoBox() {
@@ -177,6 +183,29 @@ function setColours() {
       console.log(colour);
     });
 }
+
+function sizeAndCenterSingleDoor() {
+
+  var height = $(".customDoor.two").height();
+  var width = height * 0.75;
+  console.log(width);
+  $(".customDoor.two").css("width", width + "px");
+  width = width / 2;
+  $(".customDoor.two").css("left", "calc( 50% - " + width + "px)");
+}
+
+function sizeAndCenterDoubleDoor() {
+  console.log('hola');
+  var customDoor = $('.customDoor.one')
+  var height = customDoor.height();
+  var width = customDoor.width();
+  
+  width = width / 2;
+  height= height / 2;
+  customDoor.css("left", "calc( 50% - " + width + "px)");
+  
+}
+
 //img gallery positionImg
 function positionImg() {
   console.log("positioning");
@@ -243,6 +272,15 @@ $(document).ready(function(){
 
     $(".FullScreenGallery").fadeIn(500);
     $("#fullImg > img").ready(positionImg());
+  });
+
+  $("#switches .button").click(function() {
+    if(!$(this).hasClass("on")) {
+       $("#switches .button").toggleClass("on");
+       $(".customDoor").toggleClass("hidden");
+       $("#switches .button").toggleClass("off");
+    };
+   
   });
 
 var imgChanged = true
