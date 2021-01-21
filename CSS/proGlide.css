@@ -1860,6 +1860,12 @@ button.formField {
   .where2findUs {
     top: 37rem;
   }
+  .TsandCs_page .blueBand.textBand {
+    position: static;
+    margin-top: 3rem;
+    padding: 0.5rem 4rem;
+  }
+
 }
 @media only screen and (max-device-width: 360px) {
   .fadeBox {
