@@ -1863,7 +1863,7 @@ button.formField {
   .TsandCs_page .blueBand.textBand {
     position: static;
     margin-top: 3rem;
-    padding: 0.5rem 4rem;
+    padding: 2rem 2rem 0.5rem 1rem;
   }
 
 }
