@@ -812,7 +812,7 @@ button.formField {
 }
 .footer h2 {
   letter-spacing: 1rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 0;
 }
 .footer p {
@@ -860,9 +860,12 @@ button.formField {
 .contactBox  ul  li {
   float: left;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
-
+.footer .polLink {
+  padding-bottom: 1rem;
+  display: block;
+}
 .dropNav {
   /* keeps the side nav for smaller screens in the top left corner */
   position: fixed;
